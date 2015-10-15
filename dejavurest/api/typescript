@@ -1,0 +1,627 @@
+Script started on Wed 14 Oct 2015 03:10:26 PM IST
+]0;murthyraju@murthyraju-VPCSB25FG: ~/Aptana Studio 3 Workspace/sample/apimurthyraju@murthyraju-VPCSB25FG:~/Aptana Studio 3 Workspace/sample/api$ python tests2[Kv2.py 
+About to run tests...
+Creating new records through API
+1
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_abhayambikaya-kedaragowla-class.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 151","song":{"song_id":151,"description":"Nice Song Described here -- short_abhayambikaya-kedaragowla-class","title":"Nice Song - short_abhayambikaya-kedaragowla-class","url":"http://www.google.com/songs/short_abhayambikaya-kedaragowla-class.mp3","song_name":"short_abhayambikaya-kedaragowla-class","file_sha1":"E11C369A47790E78CE1085632225467F0F4044CF","confidence":3458,"offset_seconds":0.0,"match_time":2.9020349979400635,"offset":0}}}
+------------------------------------------------------------------------
+
+
+2
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_balasubramanyam-surutti-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 152","song":{"song_id":152,"description":"Nice Song Described here -- short_balasubramanyam-surutti-detailed","title":"Nice Song - short_balasubramanyam-surutti-detailed","url":"http://www.google.com/songs/short_balasubramanyam-surutti-detailed.mp3","song_name":"short_balasubramanyam-surutti-detailed","file_sha1":"530F837010EB328CCA9BF08617A55B53F3856459","confidence":3303,"offset_seconds":0.0,"match_time":2.9007749557495117,"offset":0}}}
+------------------------------------------------------------------------
+
+
+3
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_annapurne-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 153","song":{"song_id":153,"description":"Nice Song Described here -- short_annapurne-detailed","title":"Nice Song - short_annapurne-detailed","url":"http://www.google.com/songs/short_annapurne-detailed.mp3","song_name":"short_annapurne-detailed","file_sha1":"C757FD6A23D582B0AD78D8D77B3D68A2D95BEA0F","confidence":3262,"offset_seconds":0.0,"match_time":2.921193838119507,"offset":0}}}
+------------------------------------------------------------------------
+
+
+4
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_bhajare-re-manasa-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 154","song":{"song_id":154,"description":"Nice Song Described here -- short_bhajare-re-manasa-detailed","title":"Nice Song - short_bhajare-re-manasa-detailed","url":"http://www.google.com/songs/short_bhajare-re-manasa-detailed.mp3","song_name":"short_bhajare-re-manasa-detailed","file_sha1":"0E134E608C9649A7B265EDF107F7776507863364","confidence":4144,"offset_seconds":0.0,"match_time":2.9697299003601074,"offset":0}}}
+------------------------------------------------------------------------
+
+
+5
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_balakrishnan.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 155","song":{"song_id":155,"description":"Nice Song Described here -- short_balakrishnan","title":"Nice Song - short_balakrishnan","url":"http://www.google.com/songs/short_balakrishnan.mp3","song_name":"short_balakrishnan","file_sha1":"A1CD31B3C0FF0A5AFB12C0DAB84B17EE053976D0","confidence":4312,"offset_seconds":0.0,"match_time":2.903916120529175,"offset":0}}}
+------------------------------------------------------------------------
+
+
+6
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_brahmakadigina.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 156","song":{"song_id":156,"description":"Nice Song Described here -- short_brahmakadigina","title":"Nice Song - short_brahmakadigina","url":"http://www.google.com/songs/short_brahmakadigina.mp3","song_name":"short_brahmakadigina","file_sha1":"85A1B5724ABE8EBC59B10101787AB493E34B355C","confidence":959,"offset_seconds":0.0,"match_time":2.425528049468994,"offset":0}}}
+------------------------------------------------------------------------
+
+
+7
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_bantureethi-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 157","song":{"song_id":157,"description":"Nice Song Described here -- short_bantureethi-detailed","title":"Nice Song - short_bantureethi-detailed","url":"http://www.google.com/songs/short_bantureethi-detailed.mp3","song_name":"short_bantureethi-detailed","file_sha1":"C84D4EC31AE803BC0BC3916816F9CED62AB8CAB8","confidence":3570,"offset_seconds":0.0,"match_time":2.9486289024353027,"offset":0}}}
+------------------------------------------------------------------------
+
+
+8
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_adamodi-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 158","song":{"song_id":158,"description":"Nice Song Described here -- short_adamodi-detailed","title":"Nice Song - short_adamodi-detailed","url":"http://www.google.com/songs/short_adamodi-detailed.mp3","song_name":"short_adamodi-detailed","file_sha1":"C632EA87DC5E84EFDFF6FC4B7D7616648E3C7920","confidence":791,"offset_seconds":0.0,"match_time":1.1038010120391846,"offset":0}}}
+------------------------------------------------------------------------
+
+
+9
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_bhakthibiccha.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 159","song":{"song_id":159,"description":"Nice Song Described here -- short_bhakthibiccha","title":"Nice Song - short_bhakthibiccha","url":"http://www.google.com/songs/short_bhakthibiccha.mp3","song_name":"short_bhakthibiccha","file_sha1":"051333964D2D2967DDBE4A3976326C0960A0E218","confidence":987,"offset_seconds":0.0,"match_time":1.1325318813323975,"offset":0}}}
+------------------------------------------------------------------------
+
+
+10
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_brovabarama.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 160","song":{"song_id":160,"description":"Nice Song Described here -- short_brovabarama","title":"Nice Song - short_brovabarama","url":"http://www.google.com/songs/short_brovabarama.mp3","song_name":"short_brovabarama","file_sha1":"B5E785DB96F70FED12E7CC2DF428AA2D203CECB9","confidence":3612,"offset_seconds":0.0,"match_time":2.8837380409240723,"offset":0}}}
+------------------------------------------------------------------------
+
+
+11
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_apparamabhakthi-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 161","song":{"song_id":161,"description":"Nice Song Described here -- short_apparamabhakthi-detailed","title":"Nice Song - short_apparamabhakthi-detailed","url":"http://www.google.com/songs/short_apparamabhakthi-detailed.mp3","song_name":"short_apparamabhakthi-detailed","file_sha1":"359B87E15B086F85E1787897C6CB2EC29F976B1A","confidence":1043,"offset_seconds":0.0,"match_time":1.1198740005493164,"offset":0}}}
+------------------------------------------------------------------------
+
+
+12
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_Budhamashrayaami-R.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 162","song":{"song_id":162,"description":"Nice Song Described here -- short_Budhamashrayaami-R","title":"Nice Song - short_Budhamashrayaami-R","url":"http://www.google.com/songs/short_Budhamashrayaami-R.mp3","song_name":"short_Budhamashrayaami-R","file_sha1":"2B21A9C25DF8DDCBD09081D9063228220631F8FB","confidence":1015,"offset_seconds":0.0,"match_time":2.503669023513794,"offset":0}}}
+------------------------------------------------------------------------
+
+
+13
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_arunaachala.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 163","song":{"song_id":163,"description":"Nice Song Described here -- short_arunaachala","title":"Nice Song - short_arunaachala","url":"http://www.google.com/songs/short_arunaachala.mp3","song_name":"short_arunaachala","file_sha1":"3E58E73E5EE3698E44AB84B2CB7470F67B5DCCA1","confidence":1932,"offset_seconds":0.0,"match_time":2.8439619541168213,"offset":0}}}
+------------------------------------------------------------------------
+
+
+14
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_bhavayami-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 164","song":{"song_id":164,"description":"Nice Song Described here -- short_bhavayami-detailed","title":"Nice Song - short_bhavayami-detailed","url":"http://www.google.com/songs/short_bhavayami-detailed.mp3","song_name":"short_bhavayami-detailed","file_sha1":"4CF825EDBDAEB8DD9744072EBF304B8457E0E1F1","confidence":3612,"offset_seconds":0.0,"match_time":2.9350249767303467,"offset":0}}}
+------------------------------------------------------------------------
+
+
+15
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_antarangabhakti-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 165","song":{"song_id":165,"description":"Nice Song Described here -- short_antarangabhakti-detailed","title":"Nice Song - short_antarangabhakti-detailed","url":"http://www.google.com/songs/short_antarangabhakti-detailed.mp3","song_name":"short_antarangabhakti-detailed","file_sha1":"8772FEF3E5069D154440A2DB2E75C3DE4A524916","confidence":3094,"offset_seconds":0.0,"match_time":2.8346450328826904,"offset":0}}}
+------------------------------------------------------------------------
+
+
+16
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_AlaiPayudhe-MaharajapuramSanthanam.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 166","song":{"song_id":166,"description":"Nice Song Described here -- short_AlaiPayudhe-MaharajapuramSanthanam","title":"Nice Song - short_AlaiPayudhe-MaharajapuramSanthanam","url":"http://www.google.com/songs/short_AlaiPayudhe-MaharajapuramSanthanam.mp3","song_name":"short_AlaiPayudhe-MaharajapuramSanthanam","file_sha1":"B9C65064AC4CB556315775B3877CFEF26B84D3BE","confidence":2729,"offset_seconds":0.0,"match_time":2.8134591579437256,"offset":0}}}
+------------------------------------------------------------------------
+
+
+17
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_AmbaVani-Keeravani-RK.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 167","song":{"song_id":167,"description":"Nice Song Described here -- short_AmbaVani-Keeravani-RK","title":"Nice Song - short_AmbaVani-Keeravani-RK","url":"http://www.google.com/songs/short_AmbaVani-Keeravani-RK.mp3","song_name":"short_AmbaVani-Keeravani-RK","file_sha1":"2B657439E8CAAD6E56E71A1D16A93925F82F28C9","confidence":3843,"offset_seconds":0.0,"match_time":3.1469309329986572,"offset":0}}}
+------------------------------------------------------------------------
+
+
+18
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_alakalladaga-class.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 168","song":{"song_id":168,"description":"Nice Song Described here -- short_alakalladaga-class","title":"Nice Song - short_alakalladaga-class","url":"http://www.google.com/songs/short_alakalladaga-class.mp3","song_name":"short_alakalladaga-class","file_sha1":"ABDFBF266BB4F4F0426D1364EA93D702A8CD573F","confidence":1830,"offset_seconds":0.0,"match_time":2.731153964996338,"offset":0}}}
+------------------------------------------------------------------------
+
+
+19
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_balagopala.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 169","song":{"song_id":169,"description":"Nice Song Described here -- short_balagopala","title":"Nice Song - short_balagopala","url":"http://www.google.com/songs/short_balagopala.mp3","song_name":"short_balagopala","file_sha1":"2A01F39506C92745F2479FFC677D82FC9A267CB0","confidence":2940,"offset_seconds":0.0,"match_time":2.879786968231201,"offset":0}}}
+------------------------------------------------------------------------
+
+
+20
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_anupamagunambudhi-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 170","song":{"song_id":170,"description":"Nice Song Described here -- short_anupamagunambudhi-detailed","title":"Nice Song - short_anupamagunambudhi-detailed","url":"http://www.google.com/songs/short_anupamagunambudhi-detailed.mp3","song_name":"short_anupamagunambudhi-detailed","file_sha1":"C766D457E0C2AF26896BC5860F39BD5A2AB91E37","confidence":1113,"offset_seconds":0.0,"match_time":1.1525311470031738,"offset":0}}}
+------------------------------------------------------------------------
+
+
+21
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_brochevarevarura-khamas-class.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 171","song":{"song_id":171,"description":"Nice Song Described here -- short_brochevarevarura-khamas-class","title":"Nice Song - short_brochevarevarura-khamas-class","url":"http://www.google.com/songs/short_brochevarevarura-khamas-class.mp3","song_name":"short_brochevarevarura-khamas-class","file_sha1":"427D954DD88EBD11C93CCEFFD9B9A0A2DB599A6B","confidence":1414,"offset_seconds":0.0,"match_time":2.7075068950653076,"offset":0}}}
+------------------------------------------------------------------------
+
+
+22
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_anandanatana-kedaram-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 172","song":{"song_id":172,"description":"Nice Song Described here -- short_anandanatana-kedaram-detailed","title":"Nice Song - short_anandanatana-kedaram-detailed","url":"http://www.google.com/songs/short_anandanatana-kedaram-detailed.mp3","song_name":"short_anandanatana-kedaram-detailed","file_sha1":"81B1D7A936874209977CBD8958AE41BDBDE8221E","confidence":3246,"offset_seconds":0.0,"match_time":2.9118189811706543,"offset":0}}}
+------------------------------------------------------------------------
+
+
+23
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_angaraka.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 173","song":{"song_id":173,"description":"Nice Song Described here -- short_angaraka","title":"Nice Song - short_angaraka","url":"http://www.google.com/songs/short_angaraka.mp3","song_name":"short_angaraka","file_sha1":"4F3F69BDDE1F6CA5CC6260EF1DE17CCE26333DDA","confidence":3640,"offset_seconds":0.0,"match_time":2.921189069747925,"offset":0}}}
+------------------------------------------------------------------------
+
+
+24
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_ambaneelayatakshi-detailed.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 174","song":{"song_id":174,"description":"Nice Song Described here -- short_ambaneelayatakshi-detailed","title":"Nice Song - short_ambaneelayatakshi-detailed","url":"http://www.google.com/songs/short_ambaneelayatakshi-detailed.mp3","song_name":"short_ambaneelayatakshi-detailed","file_sha1":"644BC9ED85B11C32EE697743955F45A0FAC9DF1B","confidence":2870,"offset_seconds":0.0,"match_time":2.9097330570220947,"offset":0}}}
+------------------------------------------------------------------------
+
+
+25
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_brochevarevare.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 175","song":{"song_id":175,"description":"Nice Song Described here -- short_brochevarevare","title":"Nice Song - short_brochevarevare","url":"http://www.google.com/songs/short_brochevarevare.mp3","song_name":"short_brochevarevare","file_sha1":"122682C6462DC8EA400F21C58E118315EE09E115","confidence":917,"offset_seconds":0.0,"match_time":1.1203441619873047,"offset":0}}}
+------------------------------------------------------------------------
+
+
+26
+------------------------------------------------------------------------
+Uploading /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_short/short_8_ardhanaareeshwaram_guntakriya.mp3
+Response from the server: {"data":{"status":"Finger printed and stored with song_id 176","song":{"song_id":176,"description":"Nice Song Described here -- short_8_ardhanaareeshwaram_guntakriya","title":"Nice Song - short_8_ardhanaareeshwaram_guntakriya","url":"http://www.google.com/songs/short_8_ardhanaareeshwaram_guntakriya.mp3","song_name":"short_8_ardhanaareeshwaram_guntakriya","file_sha1":"D2E24C7BADCC670CFEB8E3F283BCDA69F700AFB3","confidence":1302,"offset_seconds":0.0,"match_time":2.738239049911499,"offset":0}}}
+------------------------------------------------------------------------
+
+
+Done fingerprinting
+Verifying through API
+0
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_bhavayami-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 164, 'match_time': 2.211042881011963, 'description': 'Nice Song Described here -- short_bhavayami-detailed', 'title': 'Nice Song - short_bhavayami-detailed', 'url': 'http://www.google.com/songs/short_bhavayami-detailed.mp3', 'song_name': 'short_bhavayami-detailed', 'file_sha1': '4CF825EDBDAEB8DD9744072EBF304B8457E0E1F1', 'confidence': 1685, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":164,"description":"Nice Song Described here -- short_bhavayami-detailed","title":"Nice Song - short_bhavayami-detailed","url":"http://www.google.com/songs/short_bhavayami-detailed.mp3","song_name":"short_bhavayami-detailed","file_sha1":"4CF825EDBDAEB8DD9744072EBF304B8457E0E1F1","confidence":1685,"offset_seconds":0.51084,"match_time":2.211042881011963,"offset":11}}
+
+
+bhavayami-detailed --- bhavayami-detailed
+------------------------------------------------------------------------
+
+
+1
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_brahmakadigina.mp3
+<type 'dict'>
+{'data': {'song_id': 156, 'match_time': 1.9652199745178223, 'description': 'Nice Song Described here -- short_brahmakadigina', 'title': 'Nice Song - short_brahmakadigina', 'url': 'http://www.google.com/songs/short_brahmakadigina.mp3', 'song_name': 'short_brahmakadigina', 'file_sha1': '85A1B5724ABE8EBC59B10101787AB493E34B355C', 'confidence': 186, 'offset': 22, 'offset_seconds': 1.02168}}
+Response from the server: {"data":{"song_id":156,"description":"Nice Song Described here -- short_brahmakadigina","title":"Nice Song - short_brahmakadigina","url":"http://www.google.com/songs/short_brahmakadigina.mp3","song_name":"short_brahmakadigina","file_sha1":"85A1B5724ABE8EBC59B10101787AB493E34B355C","confidence":186,"offset_seconds":1.02168,"match_time":1.9652199745178223,"offset":22}}
+
+
+brahmakadigina --- brahmakadigina
+------------------------------------------------------------------------
+
+
+2
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_alakalladaga-class.mp3
+<type 'dict'>
+{'data': {'song_id': 168, 'match_time': 2.0719399452209473, 'description': 'Nice Song Described here -- short_alakalladaga-class', 'title': 'Nice Song - short_alakalladaga-class', 'url': 'http://www.google.com/songs/short_alakalladaga-class.mp3', 'song_name': 'short_alakalladaga-class', 'file_sha1': 'ABDFBF266BB4F4F0426D1364EA93D702A8CD573F', 'confidence': 738, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":168,"description":"Nice Song Described here -- short_alakalladaga-class","title":"Nice Song - short_alakalladaga-class","url":"http://www.google.com/songs/short_alakalladaga-class.mp3","song_name":"short_alakalladaga-class","file_sha1":"ABDFBF266BB4F4F0426D1364EA93D702A8CD573F","confidence":738,"offset_seconds":0.51084,"match_time":2.0719399452209473,"offset":11}}
+
+
+alakalladaga-class --- alakalladaga-class
+------------------------------------------------------------------------
+
+
+3
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_balakrishnan.mp3
+<type 'dict'>
+{'data': {'song_id': 155, 'match_time': 2.2938849925994873, 'description': 'Nice Song Described here -- short_balakrishnan', 'title': 'Nice Song - short_balakrishnan', 'url': 'http://www.google.com/songs/short_balakrishnan.mp3', 'song_name': 'short_balakrishnan', 'file_sha1': 'A1CD31B3C0FF0A5AFB12C0DAB84B17EE053976D0', 'confidence': 2224, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":155,"description":"Nice Song Described here -- short_balakrishnan","title":"Nice Song - short_balakrishnan","url":"http://www.google.com/songs/short_balakrishnan.mp3","song_name":"short_balakrishnan","file_sha1":"A1CD31B3C0FF0A5AFB12C0DAB84B17EE053976D0","confidence":2224,"offset_seconds":0.51084,"match_time":2.2938849925994873,"offset":11}}
+
+
+balakrishnan --- balakrishnan
+------------------------------------------------------------------------
+
+
+4
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_anandanatana-kedaram-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 172, 'match_time': 2.2068030834198, 'description': 'Nice Song Described here -- short_anandanatana-kedaram-detailed', 'title': 'Nice Song - short_anandanatana-kedaram-detailed', 'url': 'http://www.google.com/songs/short_anandanatana-kedaram-detailed.mp3', 'song_name': 'short_anandanatana-kedaram-detailed', 'file_sha1': '81B1D7A936874209977CBD8958AE41BDBDE8221E', 'confidence': 1243, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":172,"description":"Nice Song Described here -- short_anandanatana-kedaram-detailed","title":"Nice Song - short_anandanatana-kedaram-detailed","url":"http://www.google.com/songs/short_anandanatana-kedaram-detailed.mp3","song_name":"short_anandanatana-kedaram-detailed","file_sha1":"81B1D7A936874209977CBD8958AE41BDBDE8221E","confidence":1243,"offset_seconds":0.51084,"match_time":2.2068030834198,"offset":11}}
+
+
+anandanatana-kedaram-detailed --- anandanatana-kedaram-detailed
+------------------------------------------------------------------------
+
+
+5
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_8_ardhanaareeshwaram_guntakriya.mp3
+<type 'dict'>
+{'data': {'song_id': 176, 'match_time': 2.0972671508789062, 'description': 'Nice Song Described here -- short_8_ardhanaareeshwaram_guntakriya', 'title': 'Nice Song - short_8_ardhanaareeshwaram_guntakriya', 'url': 'http://www.google.com/songs/short_8_ardhanaareeshwaram_guntakriya.mp3', 'song_name': 'short_8_ardhanaareeshwaram_guntakriya', 'file_sha1': 'D2E24C7BADCC670CFEB8E3F283BCDA69F700AFB3', 'confidence': 564, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":176,"description":"Nice Song Described here -- short_8_ardhanaareeshwaram_guntakriya","title":"Nice Song - short_8_ardhanaareeshwaram_guntakriya","url":"http://www.google.com/songs/short_8_ardhanaareeshwaram_guntakriya.mp3","song_name":"short_8_ardhanaareeshwaram_guntakriya","file_sha1":"D2E24C7BADCC670CFEB8E3F283BCDA69F700AFB3","confidence":564,"offset_seconds":0.51084,"match_time":2.0972671508789062,"offset":11}}
+
+
+8_ardhanaareeshwaram_guntakriya --- 8_ardhanaareeshwaram_guntakriya
+------------------------------------------------------------------------
+
+
+6
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_Budhamashrayaami-R.mp3
+<type 'dict'>
+{'data': {'song_id': 162, 'match_time': 1.8186860084533691, 'description': 'Nice Song Described here -- short_Budhamashrayaami-R', 'title': 'Nice Song - short_Budhamashrayaami-R', 'url': 'http://www.google.com/songs/short_Budhamashrayaami-R.mp3', 'song_name': 'short_Budhamashrayaami-R', 'file_sha1': '2B21A9C25DF8DDCBD09081D9063228220631F8FB', 'confidence': 613, 'offset': 22, 'offset_seconds': 1.02168}}
+Response from the server: {"data":{"song_id":162,"description":"Nice Song Described here -- short_Budhamashrayaami-R","title":"Nice Song - short_Budhamashrayaami-R","url":"http://www.google.com/songs/short_Budhamashrayaami-R.mp3","song_name":"short_Budhamashrayaami-R","file_sha1":"2B21A9C25DF8DDCBD09081D9063228220631F8FB","confidence":613,"offset_seconds":1.02168,"match_time":1.8186860084533691,"offset":22}}
+
+
+Budhamashrayaami-R --- Budhamashrayaami-R
+------------------------------------------------------------------------
+
+
+7
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_arunaachala.mp3
+<type 'dict'>
+{'data': {'song_id': 163, 'match_time': 2.1186091899871826, 'description': 'Nice Song Described here -- short_arunaachala', 'title': 'Nice Song - short_arunaachala', 'url': 'http://www.google.com/songs/short_arunaachala.mp3', 'song_name': 'short_arunaachala', 'file_sha1': '3E58E73E5EE3698E44AB84B2CB7470F67B5DCCA1', 'confidence': 1100, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":163,"description":"Nice Song Described here -- short_arunaachala","title":"Nice Song - short_arunaachala","url":"http://www.google.com/songs/short_arunaachala.mp3","song_name":"short_arunaachala","file_sha1":"3E58E73E5EE3698E44AB84B2CB7470F67B5DCCA1","confidence":1100,"offset_seconds":0.51084,"match_time":2.1186091899871826,"offset":11}}
+
+
+arunaachala --- arunaachala
+------------------------------------------------------------------------
+
+
+8
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_anupamagunambudhi-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 170, 'match_time': 0.8643240928649902, 'description': 'Nice Song Described here -- short_anupamagunambudhi-detailed', 'title': 'Nice Song - short_anupamagunambudhi-detailed', 'url': 'http://www.google.com/songs/short_anupamagunambudhi-detailed.mp3', 'song_name': 'short_anupamagunambudhi-detailed', 'file_sha1': 'C766D457E0C2AF26896BC5860F39BD5A2AB91E37', 'confidence': 203, 'offset': 8, 'offset_seconds': 0.37152}}
+Response from the server: {"data":{"song_id":170,"description":"Nice Song Described here -- short_anupamagunambudhi-detailed","title":"Nice Song - short_anupamagunambudhi-detailed","url":"http://www.google.com/songs/short_anupamagunambudhi-detailed.mp3","song_name":"short_anupamagunambudhi-detailed","file_sha1":"C766D457E0C2AF26896BC5860F39BD5A2AB91E37","confidence":203,"offset_seconds":0.37152,"match_time":0.8643240928649902,"offset":8}}
+
+
+anupamagunambudhi-detailed --- anupamagunambudhi-detailed
+------------------------------------------------------------------------
+
+
+9
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_antarangabhakti-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 165, 'match_time': 2.1824071407318115, 'description': 'Nice Song Described here -- short_antarangabhakti-detailed', 'title': 'Nice Song - short_antarangabhakti-detailed', 'url': 'http://www.google.com/songs/short_antarangabhakti-detailed.mp3', 'song_name': 'short_antarangabhakti-detailed', 'file_sha1': '8772FEF3E5069D154440A2DB2E75C3DE4A524916', 'confidence': 1308, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":165,"description":"Nice Song Described here -- short_antarangabhakti-detailed","title":"Nice Song - short_antarangabhakti-detailed","url":"http://www.google.com/songs/short_antarangabhakti-detailed.mp3","song_name":"short_antarangabhakti-detailed","file_sha1":"8772FEF3E5069D154440A2DB2E75C3DE4A524916","confidence":1308,"offset_seconds":0.51084,"match_time":2.1824071407318115,"offset":11}}
+
+
+antarangabhakti-detailed --- antarangabhakti-detailed
+------------------------------------------------------------------------
+
+
+10
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_brochevarevarura-khamas-class.mp3
+<type 'dict'>
+{'data': {'song_id': 171, 'match_time': 2.1288270950317383, 'description': 'Nice Song Described here -- short_brochevarevarura-khamas-class', 'title': 'Nice Song - short_brochevarevarura-khamas-class', 'url': 'http://www.google.com/songs/short_brochevarevarura-khamas-class.mp3', 'song_name': 'short_brochevarevarura-khamas-class', 'file_sha1': '427D954DD88EBD11C93CCEFFD9B9A0A2DB599A6B', 'confidence': 914, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":171,"description":"Nice Song Described here -- short_brochevarevarura-khamas-class","title":"Nice Song - short_brochevarevarura-khamas-class","url":"http://www.google.com/songs/short_brochevarevarura-khamas-class.mp3","song_name":"short_brochevarevarura-khamas-class","file_sha1":"427D954DD88EBD11C93CCEFFD9B9A0A2DB599A6B","confidence":914,"offset_seconds":0.51084,"match_time":2.1288270950317383,"offset":11}}
+
+
+brochevarevarura-khamas-class --- brochevarevarura-khamas-class
+------------------------------------------------------------------------
+
+
+11
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_AmbaVani-Keeravani-RK.mp3
+<type 'dict'>
+{'data': {'song_id': 167, 'match_time': 2.3089940547943115, 'description': 'Nice Song Described here -- short_AmbaVani-Keeravani-RK', 'title': 'Nice Song - short_AmbaVani-Keeravani-RK', 'url': 'http://www.google.com/songs/short_AmbaVani-Keeravani-RK.mp3', 'song_name': 'short_AmbaVani-Keeravani-RK', 'file_sha1': '2B657439E8CAAD6E56E71A1D16A93925F82F28C9', 'confidence': 102, 'offset': 12, 'offset_seconds': 0.55728}}
+Response from the server: {"data":{"song_id":167,"description":"Nice Song Described here -- short_AmbaVani-Keeravani-RK","title":"Nice Song - short_AmbaVani-Keeravani-RK","url":"http://www.google.com/songs/short_AmbaVani-Keeravani-RK.mp3","song_name":"short_AmbaVani-Keeravani-RK","file_sha1":"2B657439E8CAAD6E56E71A1D16A93925F82F28C9","confidence":102,"offset_seconds":0.55728,"match_time":2.3089940547943115,"offset":12}}
+
+
+AmbaVani-Keeravani-RK --- AmbaVani-Keeravani-RK
+------------------------------------------------------------------------
+
+
+12
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_angaraka.mp3
+<type 'dict'>
+{'data': {'song_id': 173, 'match_time': 2.214183807373047, 'description': 'Nice Song Described here -- short_angaraka', 'title': 'Nice Song - short_angaraka', 'url': 'http://www.google.com/songs/short_angaraka.mp3', 'song_name': 'short_angaraka', 'file_sha1': '4F3F69BDDE1F6CA5CC6260EF1DE17CCE26333DDA', 'confidence': 1706, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":173,"description":"Nice Song Described here -- short_angaraka","title":"Nice Song - short_angaraka","url":"http://www.google.com/songs/short_angaraka.mp3","song_name":"short_angaraka","file_sha1":"4F3F69BDDE1F6CA5CC6260EF1DE17CCE26333DDA","confidence":1706,"offset_seconds":0.51084,"match_time":2.214183807373047,"offset":11}}
+
+
+angaraka --- angaraka
+------------------------------------------------------------------------
+
+
+13
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_ambaneelayatakshi-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 174, 'match_time': 2.1662449836730957, 'description': 'Nice Song Described here -- short_ambaneelayatakshi-detailed', 'title': 'Nice Song - short_ambaneelayatakshi-detailed', 'url': 'http://www.google.com/songs/short_ambaneelayatakshi-detailed.mp3', 'song_name': 'short_ambaneelayatakshi-detailed', 'file_sha1': '644BC9ED85B11C32EE697743955F45A0FAC9DF1B', 'confidence': 1355, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":174,"description":"Nice Song Described here -- short_ambaneelayatakshi-detailed","title":"Nice Song - short_ambaneelayatakshi-detailed","url":"http://www.google.com/songs/short_ambaneelayatakshi-detailed.mp3","song_name":"short_ambaneelayatakshi-detailed","file_sha1":"644BC9ED85B11C32EE697743955F45A0FAC9DF1B","confidence":1355,"offset_seconds":0.51084,"match_time":2.1662449836730957,"offset":11}}
+
+
+ambaneelayatakshi-detailed --- ambaneelayatakshi-detailed
+------------------------------------------------------------------------
+
+
+14
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_balagopala.mp3
+<type 'dict'>
+{'data': {'song_id': 169, 'match_time': 2.1647469997406006, 'description': 'Nice Song Described here -- short_balagopala', 'title': 'Nice Song - short_balagopala', 'url': 'http://www.google.com/songs/short_balagopala.mp3', 'song_name': 'short_balagopala', 'file_sha1': '2A01F39506C92745F2479FFC677D82FC9A267CB0', 'confidence': 1136, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":169,"description":"Nice Song Described here -- short_balagopala","title":"Nice Song - short_balagopala","url":"http://www.google.com/songs/short_balagopala.mp3","song_name":"short_balagopala","file_sha1":"2A01F39506C92745F2479FFC677D82FC9A267CB0","confidence":1136,"offset_seconds":0.51084,"match_time":2.1647469997406006,"offset":11}}
+
+
+balagopala --- balagopala
+------------------------------------------------------------------------
+
+
+15
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_bantureethi-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 157, 'match_time': 2.2087759971618652, 'description': 'Nice Song Described here -- short_bantureethi-detailed', 'title': 'Nice Song - short_bantureethi-detailed', 'url': 'http://www.google.com/songs/short_bantureethi-detailed.mp3', 'song_name': 'short_bantureethi-detailed', 'file_sha1': 'C84D4EC31AE803BC0BC3916816F9CED62AB8CAB8', 'confidence': 1044, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":157,"description":"Nice Song Described here -- short_bantureethi-detailed","title":"Nice Song - short_bantureethi-detailed","url":"http://www.google.com/songs/short_bantureethi-detailed.mp3","song_name":"short_bantureethi-detailed","file_sha1":"C84D4EC31AE803BC0BC3916816F9CED62AB8CAB8","confidence":1044,"offset_seconds":0.51084,"match_time":2.2087759971618652,"offset":11}}
+
+
+bantureethi-detailed --- bantureethi-detailed
+------------------------------------------------------------------------
+
+
+16
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_balasubramanyam-surutti-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 152, 'match_time': 2.1722159385681152, 'description': 'Nice Song Described here -- short_balasubramanyam-surutti-detailed', 'title': 'Nice Song - short_balasubramanyam-surutti-detailed', 'url': 'http://www.google.com/songs/short_balasubramanyam-surutti-detailed.mp3', 'song_name': 'short_balasubramanyam-surutti-detailed', 'file_sha1': '530F837010EB328CCA9BF08617A55B53F3856459', 'confidence': 1739, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":152,"description":"Nice Song Described here -- short_balasubramanyam-surutti-detailed","title":"Nice Song - short_balasubramanyam-surutti-detailed","url":"http://www.google.com/songs/short_balasubramanyam-surutti-detailed.mp3","song_name":"short_balasubramanyam-surutti-detailed","file_sha1":"530F837010EB328CCA9BF08617A55B53F3856459","confidence":1739,"offset_seconds":0.51084,"match_time":2.1722159385681152,"offset":11}}
+
+
+balasubramanyam-surutti-detailed --- balasubramanyam-surutti-detailed
+------------------------------------------------------------------------
+
+
+17
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_annapurne-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 153, 'match_time': 2.231922149658203, 'description': 'Nice Song Described here -- short_annapurne-detailed', 'title': 'Nice Song - short_annapurne-detailed', 'url': 'http://www.google.com/songs/short_annapurne-detailed.mp3', 'song_name': 'short_annapurne-detailed', 'file_sha1': 'C757FD6A23D582B0AD78D8D77B3D68A2D95BEA0F', 'confidence': 1309, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":153,"description":"Nice Song Described here -- short_annapurne-detailed","title":"Nice Song - short_annapurne-detailed","url":"http://www.google.com/songs/short_annapurne-detailed.mp3","song_name":"short_annapurne-detailed","file_sha1":"C757FD6A23D582B0AD78D8D77B3D68A2D95BEA0F","confidence":1309,"offset_seconds":0.51084,"match_time":2.231922149658203,"offset":11}}
+
+
+annapurne-detailed --- annapurne-detailed
+------------------------------------------------------------------------
+
+
+18
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_adamodi-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 158, 'match_time': 0.8863489627838135, 'description': 'Nice Song Described here -- short_adamodi-detailed', 'title': 'Nice Song - short_adamodi-detailed', 'url': 'http://www.google.com/songs/short_adamodi-detailed.mp3', 'song_name': 'short_adamodi-detailed', 'file_sha1': 'C632EA87DC5E84EFDFF6FC4B7D7616648E3C7920', 'confidence': 316, 'offset': 8, 'offset_seconds': 0.37152}}
+Response from the server: {"data":{"song_id":158,"description":"Nice Song Described here -- short_adamodi-detailed","title":"Nice Song - short_adamodi-detailed","url":"http://www.google.com/songs/short_adamodi-detailed.mp3","song_name":"short_adamodi-detailed","file_sha1":"C632EA87DC5E84EFDFF6FC4B7D7616648E3C7920","confidence":316,"offset_seconds":0.37152,"match_time":0.8863489627838135,"offset":8}}
+
+
+adamodi-detailed --- adamodi-detailed
+------------------------------------------------------------------------
+
+
+19
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_brovabarama.mp3
+<type 'dict'>
+{'data': {'song_id': 160, 'match_time': 2.2688310146331787, 'description': 'Nice Song Described here -- short_brovabarama', 'title': 'Nice Song - short_brovabarama', 'url': 'http://www.google.com/songs/short_brovabarama.mp3', 'song_name': 'short_brovabarama', 'file_sha1': 'B5E785DB96F70FED12E7CC2DF428AA2D203CECB9', 'confidence': 1620, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":160,"description":"Nice Song Described here -- short_brovabarama","title":"Nice Song - short_brovabarama","url":"http://www.google.com/songs/short_brovabarama.mp3","song_name":"short_brovabarama","file_sha1":"B5E785DB96F70FED12E7CC2DF428AA2D203CECB9","confidence":1620,"offset_seconds":0.51084,"match_time":2.2688310146331787,"offset":11}}
+
+
+brovabarama --- brovabarama
+------------------------------------------------------------------------
+
+
+20
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_bhakthibiccha.mp3
+<type 'dict'>
+{'data': {'song_id': 159, 'match_time': 0.8631818294525146, 'description': 'Nice Song Described here -- short_bhakthibiccha', 'title': 'Nice Song - short_bhakthibiccha', 'url': 'http://www.google.com/songs/short_bhakthibiccha.mp3', 'song_name': 'short_bhakthibiccha', 'file_sha1': '051333964D2D2967DDBE4A3976326C0960A0E218', 'confidence': 377, 'offset': 8, 'offset_seconds': 0.37152}}
+Response from the server: {"data":{"song_id":159,"description":"Nice Song Described here -- short_bhakthibiccha","title":"Nice Song - short_bhakthibiccha","url":"http://www.google.com/songs/short_bhakthibiccha.mp3","song_name":"short_bhakthibiccha","file_sha1":"051333964D2D2967DDBE4A3976326C0960A0E218","confidence":377,"offset_seconds":0.37152,"match_time":0.8631818294525146,"offset":8}}
+
+
+bhakthibiccha --- bhakthibiccha
+------------------------------------------------------------------------
+
+
+21
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_bhajare-re-manasa-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 154, 'match_time': 2.256354808807373, 'description': 'Nice Song Described here -- short_bhajare-re-manasa-detailed', 'title': 'Nice Song - short_bhajare-re-manasa-detailed', 'url': 'http://www.google.com/songs/short_bhajare-re-manasa-detailed.mp3', 'song_name': 'short_bhajare-re-manasa-detailed', 'file_sha1': '0E134E608C9649A7B265EDF107F7776507863364', 'confidence': 2257, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":154,"description":"Nice Song Described here -- short_bhajare-re-manasa-detailed","title":"Nice Song - short_bhajare-re-manasa-detailed","url":"http://www.google.com/songs/short_bhajare-re-manasa-detailed.mp3","song_name":"short_bhajare-re-manasa-detailed","file_sha1":"0E134E608C9649A7B265EDF107F7776507863364","confidence":2257,"offset_seconds":0.51084,"match_time":2.256354808807373,"offset":11}}
+
+
+bhajare-re-manasa-detailed --- bhajare-re-manasa-detailed
+------------------------------------------------------------------------
+
+
+22
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_abhayambikaya-kedaragowla-class.mp3
+<type 'dict'>
+{'data': {'song_id': 151, 'match_time': 2.246116876602173, 'description': 'Nice Song Described here -- short_abhayambikaya-kedaragowla-class', 'title': 'Nice Song - short_abhayambikaya-kedaragowla-class', 'url': 'http://www.google.com/songs/short_abhayambikaya-kedaragowla-class.mp3', 'song_name': 'short_abhayambikaya-kedaragowla-class', 'file_sha1': 'E11C369A47790E78CE1085632225467F0F4044CF', 'confidence': 1929, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":151,"description":"Nice Song Described here -- short_abhayambikaya-kedaragowla-class","title":"Nice Song - short_abhayambikaya-kedaragowla-class","url":"http://www.google.com/songs/short_abhayambikaya-kedaragowla-class.mp3","song_name":"short_abhayambikaya-kedaragowla-class","file_sha1":"E11C369A47790E78CE1085632225467F0F4044CF","confidence":1929,"offset_seconds":0.51084,"match_time":2.246116876602173,"offset":11}}
+
+
+abhayambikaya-kedaragowla-class --- abhayambikaya-kedaragowla-class
+------------------------------------------------------------------------
+
+
+23
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_apparamabhakthi-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 161, 'match_time': 0.863422155380249, 'description': 'Nice Song Described here -- short_apparamabhakthi-detailed', 'title': 'Nice Song - short_apparamabhakthi-detailed', 'url': 'http://www.google.com/songs/short_apparamabhakthi-detailed.mp3', 'song_name': 'short_apparamabhakthi-detailed', 'file_sha1': '359B87E15B086F85E1787897C6CB2EC29F976B1A', 'confidence': 363, 'offset': 8, 'offset_seconds': 0.37152}}
+Response from the server: {"data":{"song_id":161,"description":"Nice Song Described here -- short_apparamabhakthi-detailed","title":"Nice Song - short_apparamabhakthi-detailed","url":"http://www.google.com/songs/short_apparamabhakthi-detailed.mp3","song_name":"short_apparamabhakthi-detailed","file_sha1":"359B87E15B086F85E1787897C6CB2EC29F976B1A","confidence":363,"offset_seconds":0.37152,"match_time":0.863422155380249,"offset":8}}
+
+
+apparamabhakthi-detailed --- apparamabhakthi-detailed
+------------------------------------------------------------------------
+
+
+24
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_brochevarevare.mp3
+<type 'dict'>
+{'data': {'song_id': 175, 'match_time': 0.8563220500946045, 'description': 'Nice Song Described here -- short_brochevarevare', 'title': 'Nice Song - short_brochevarevare', 'url': 'http://www.google.com/songs/short_brochevarevare.mp3', 'song_name': 'short_brochevarevare', 'file_sha1': '122682C6462DC8EA400F21C58E118315EE09E115', 'confidence': 279, 'offset': 8, 'offset_seconds': 0.37152}}
+Response from the server: {"data":{"song_id":175,"description":"Nice Song Described here -- short_brochevarevare","title":"Nice Song - short_brochevarevare","url":"http://www.google.com/songs/short_brochevarevare.mp3","song_name":"short_brochevarevare","file_sha1":"122682C6462DC8EA400F21C58E118315EE09E115","confidence":279,"offset_seconds":0.37152,"match_time":0.8563220500946045,"offset":8}}
+
+
+brochevarevare --- brochevarevare
+------------------------------------------------------------------------
+
+
+25
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_shorter/shorter_AlaiPayudhe-MaharajapuramSanthanam.mp3
+<type 'dict'>
+{'data': {'song_id': 166, 'match_time': 2.1743531227111816, 'description': 'Nice Song Described here -- short_AlaiPayudhe-MaharajapuramSanthanam', 'title': 'Nice Song - short_AlaiPayudhe-MaharajapuramSanthanam', 'url': 'http://www.google.com/songs/short_AlaiPayudhe-MaharajapuramSanthanam.mp3', 'song_name': 'short_AlaiPayudhe-MaharajapuramSanthanam', 'file_sha1': 'B9C65064AC4CB556315775B3877CFEF26B84D3BE', 'confidence': 993, 'offset': 11, 'offset_seconds': 0.51084}}
+Response from the server: {"data":{"song_id":166,"description":"Nice Song Described here -- short_AlaiPayudhe-MaharajapuramSanthanam","title":"Nice Song - short_AlaiPayudhe-MaharajapuramSanthanam","url":"http://www.google.com/songs/short_AlaiPayudhe-MaharajapuramSanthanam.mp3","song_name":"short_AlaiPayudhe-MaharajapuramSanthanam","file_sha1":"B9C65064AC4CB556315775B3877CFEF26B84D3BE","confidence":993,"offset_seconds":0.51084,"match_time":2.1743531227111816,"offset":11}}
+
+
+AlaiPayudhe-MaharajapuramSanthanam --- AlaiPayudhe-MaharajapuramSanthanam
+------------------------------------------------------------------------
+
+
+Done verifying. Match Efficiency: 26 / 26
+Verifying songs with background noise through API
+0
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_abhayambikaya-kedaragowla-class.mp3
+<type 'dict'>
+{'data': {'song_id': 151, 'match_time': 1.6466891765594482, 'description': 'Nice Song Described here -- short_abhayambikaya-kedaragowla-class', 'title': 'Nice Song - short_abhayambikaya-kedaragowla-class', 'url': 'http://www.google.com/songs/short_abhayambikaya-kedaragowla-class.mp3', 'song_name': 'short_abhayambikaya-kedaragowla-class', 'file_sha1': 'E11C369A47790E78CE1085632225467F0F4044CF', 'confidence': 122, 'offset': 26, 'offset_seconds': 1.20744}}
+Response from the server: {"data":{"song_id":151,"description":"Nice Song Described here -- short_abhayambikaya-kedaragowla-class","title":"Nice Song - short_abhayambikaya-kedaragowla-class","url":"http://www.google.com/songs/short_abhayambikaya-kedaragowla-class.mp3","song_name":"short_abhayambikaya-kedaragowla-class","file_sha1":"E11C369A47790E78CE1085632225467F0F4044CF","confidence":122,"offset_seconds":1.20744,"match_time":1.6466891765594482,"offset":26}}
+
+
+abhayambikaya-kedaragowla-class --- abhayambikaya-kedaragowla-class
+------------------------------------------------------------------------
+
+
+1
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_alakalladaga-class.mp3
+<type 'dict'>
+{'data': {'song_id': 168, 'match_time': 1.603626012802124, 'description': 'Nice Song Described here -- short_alakalladaga-class', 'title': 'Nice Song - short_alakalladaga-class', 'url': 'http://www.google.com/songs/short_alakalladaga-class.mp3', 'song_name': 'short_alakalladaga-class', 'file_sha1': 'ABDFBF266BB4F4F0426D1364EA93D702A8CD573F', 'confidence': 642, 'offset': 25, 'offset_seconds': 1.161}}
+Response from the server: {"data":{"song_id":168,"description":"Nice Song Described here -- short_alakalladaga-class","title":"Nice Song - short_alakalladaga-class","url":"http://www.google.com/songs/short_alakalladaga-class.mp3","song_name":"short_alakalladaga-class","file_sha1":"ABDFBF266BB4F4F0426D1364EA93D702A8CD573F","confidence":642,"offset_seconds":1.161,"match_time":1.603626012802124,"offset":25}}
+
+
+alakalladaga-class --- alakalladaga-class
+------------------------------------------------------------------------
+
+
+2
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_8_ardhanaareeshwaram_guntakriya.mp3
+<type 'dict'>
+{'data': {'song_id': 176, 'match_time': 1.6317989826202393, 'description': 'Nice Song Described here -- short_8_ardhanaareeshwaram_guntakriya', 'title': 'Nice Song - short_8_ardhanaareeshwaram_guntakriya', 'url': 'http://www.google.com/songs/short_8_ardhanaareeshwaram_guntakriya.mp3', 'song_name': 'short_8_ardhanaareeshwaram_guntakriya', 'file_sha1': 'D2E24C7BADCC670CFEB8E3F283BCDA69F700AFB3', 'confidence': 520, 'offset': 25, 'offset_seconds': 1.161}}
+Response from the server: {"data":{"song_id":176,"description":"Nice Song Described here -- short_8_ardhanaareeshwaram_guntakriya","title":"Nice Song - short_8_ardhanaareeshwaram_guntakriya","url":"http://www.google.com/songs/short_8_ardhanaareeshwaram_guntakriya.mp3","song_name":"short_8_ardhanaareeshwaram_guntakriya","file_sha1":"D2E24C7BADCC670CFEB8E3F283BCDA69F700AFB3","confidence":520,"offset_seconds":1.161,"match_time":1.6317989826202393,"offset":25}}
+
+
+8_ardhanaareeshwaram_guntakriya --- 8_ardhanaareeshwaram_guntakriya
+------------------------------------------------------------------------
+
+
+3
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_AmbaVani-Keeravani-RK.mp3
+<type 'dict'>
+{'data': {'song_id': 167, 'match_time': 1.825922966003418, 'description': 'Nice Song Described here -- short_AmbaVani-Keeravani-RK', 'title': 'Nice Song - short_AmbaVani-Keeravani-RK', 'url': 'http://www.google.com/songs/short_AmbaVani-Keeravani-RK.mp3', 'song_name': 'short_AmbaVani-Keeravani-RK', 'file_sha1': '2B657439E8CAAD6E56E71A1D16A93925F82F28C9', 'confidence': 106, 'offset': 28, 'offset_seconds': 1.30032}}
+Response from the server: {"data":{"song_id":167,"description":"Nice Song Described here -- short_AmbaVani-Keeravani-RK","title":"Nice Song - short_AmbaVani-Keeravani-RK","url":"http://www.google.com/songs/short_AmbaVani-Keeravani-RK.mp3","song_name":"short_AmbaVani-Keeravani-RK","file_sha1":"2B657439E8CAAD6E56E71A1D16A93925F82F28C9","confidence":106,"offset_seconds":1.30032,"match_time":1.825922966003418,"offset":28}}
+
+
+AmbaVani-Keeravani-RK --- AmbaVani-Keeravani-RK
+------------------------------------------------------------------------
+
+
+4
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_annapurne-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 153, 'match_time': 1.9343130588531494, 'description': 'Nice Song Described here -- short_annapurne-detailed', 'title': 'Nice Song - short_annapurne-detailed', 'url': 'http://www.google.com/songs/short_annapurne-detailed.mp3', 'song_name': 'short_annapurne-detailed', 'file_sha1': 'C757FD6A23D582B0AD78D8D77B3D68A2D95BEA0F', 'confidence': 168, 'offset': 20, 'offset_seconds': 0.9288}}
+Response from the server: {"data":{"song_id":153,"description":"Nice Song Described here -- short_annapurne-detailed","title":"Nice Song - short_annapurne-detailed","url":"http://www.google.com/songs/short_annapurne-detailed.mp3","song_name":"short_annapurne-detailed","file_sha1":"C757FD6A23D582B0AD78D8D77B3D68A2D95BEA0F","confidence":168,"offset_seconds":0.9288,"match_time":1.9343130588531494,"offset":20}}
+
+
+annapurne-detailed --- annapurne-detailed
+------------------------------------------------------------------------
+
+
+5
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_AlaiPayudhe-MaharajapuramSanthanam.mp3
+<type 'dict'>
+{'data': {'song_id': 166, 'match_time': 1.7714190483093262, 'description': 'Nice Song Described here -- short_AlaiPayudhe-MaharajapuramSanthanam', 'title': 'Nice Song - short_AlaiPayudhe-MaharajapuramSanthanam', 'url': 'http://www.google.com/songs/short_AlaiPayudhe-MaharajapuramSanthanam.mp3', 'song_name': 'short_AlaiPayudhe-MaharajapuramSanthanam', 'file_sha1': 'B9C65064AC4CB556315775B3877CFEF26B84D3BE', 'confidence': 43, 'offset': 23, 'offset_seconds': 1.06812}}
+Response from the server: {"data":{"song_id":166,"description":"Nice Song Described here -- short_AlaiPayudhe-MaharajapuramSanthanam","title":"Nice Song - short_AlaiPayudhe-MaharajapuramSanthanam","url":"http://www.google.com/songs/short_AlaiPayudhe-MaharajapuramSanthanam.mp3","song_name":"short_AlaiPayudhe-MaharajapuramSanthanam","file_sha1":"B9C65064AC4CB556315775B3877CFEF26B84D3BE","confidence":43,"offset_seconds":1.06812,"match_time":1.7714190483093262,"offset":23}}
+
+
+AlaiPayudhe-MaharajapuramSanthanam --- AlaiPayudhe-MaharajapuramSanthanam
+------------------------------------------------------------------------
+
+
+6
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_ambaneelayatakshi-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 174, 'match_time': 1.5737252235412598, 'description': 'Nice Song Described here -- short_ambaneelayatakshi-detailed', 'title': 'Nice Song - short_ambaneelayatakshi-detailed', 'url': 'http://www.google.com/songs/short_ambaneelayatakshi-detailed.mp3', 'song_name': 'short_ambaneelayatakshi-detailed', 'file_sha1': '644BC9ED85B11C32EE697743955F45A0FAC9DF1B', 'confidence': 86, 'offset': 27, 'offset_seconds': 1.25388}}
+Response from the server: {"data":{"song_id":174,"description":"Nice Song Described here -- short_ambaneelayatakshi-detailed","title":"Nice Song - short_ambaneelayatakshi-detailed","url":"http://www.google.com/songs/short_ambaneelayatakshi-detailed.mp3","song_name":"short_ambaneelayatakshi-detailed","file_sha1":"644BC9ED85B11C32EE697743955F45A0FAC9DF1B","confidence":86,"offset_seconds":1.25388,"match_time":1.5737252235412598,"offset":27}}
+
+
+ambaneelayatakshi-detailed --- ambaneelayatakshi-detailed
+------------------------------------------------------------------------
+
+
+7
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_angaraka.mp3
+<type 'dict'>
+{'data': {'song_id': 173, 'match_time': 1.9377491474151611, 'description': 'Nice Song Described here -- short_angaraka', 'title': 'Nice Song - short_angaraka', 'url': 'http://www.google.com/songs/short_angaraka.mp3', 'song_name': 'short_angaraka', 'file_sha1': '4F3F69BDDE1F6CA5CC6260EF1DE17CCE26333DDA', 'confidence': 404, 'offset': 20, 'offset_seconds': 0.9288}}
+Response from the server: {"data":{"song_id":173,"description":"Nice Song Described here -- short_angaraka","title":"Nice Song - short_angaraka","url":"http://www.google.com/songs/short_angaraka.mp3","song_name":"short_angaraka","file_sha1":"4F3F69BDDE1F6CA5CC6260EF1DE17CCE26333DDA","confidence":404,"offset_seconds":0.9288,"match_time":1.9377491474151611,"offset":20}}
+
+
+angaraka --- angaraka
+------------------------------------------------------------------------
+
+
+8
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_adamodi-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 158, 'match_time': 0.6391870975494385, 'description': 'Nice Song Described here -- short_adamodi-detailed', 'title': 'Nice Song - short_adamodi-detailed', 'url': 'http://www.google.com/songs/short_adamodi-detailed.mp3', 'song_name': 'short_adamodi-detailed', 'file_sha1': 'C632EA87DC5E84EFDFF6FC4B7D7616648E3C7920', 'confidence': 105, 'offset': 18, 'offset_seconds': 0.83592}}
+Response from the server: {"data":{"song_id":158,"description":"Nice Song Described here -- short_adamodi-detailed","title":"Nice Song - short_adamodi-detailed","url":"http://www.google.com/songs/short_adamodi-detailed.mp3","song_name":"short_adamodi-detailed","file_sha1":"C632EA87DC5E84EFDFF6FC4B7D7616648E3C7920","confidence":105,"offset_seconds":0.83592,"match_time":0.6391870975494385,"offset":18}}
+
+
+adamodi-detailed --- adamodi-detailed
+------------------------------------------------------------------------
+
+
+9
+------------------------------------------------------------------------
+Uploading for verification /home/murthyraju/Documents/fl/dejavu/samples_archive/Carnatic_recorded/recorded_shorter_anandanatana-kedaram-detailed.mp3
+<type 'dict'>
+{'data': {'song_id': 172, 'match_time': 1.8504328727722168, 'description': 'Nice Song Described here -- short_anandanatana-kedaram-detailed', 'title': 'Nice Song - short_anandanatana-kedaram-detailed', 'url': 'http://www.google.com/songs/short_anandanatana-kedaram-detailed.mp3', 'song_name': 'short_anandanatana-kedaram-detailed', 'file_sha1': '81B1D7A936874209977CBD8958AE41BDBDE8221E', 'confidence': 315, 'offset': 20, 'offset_seconds': 0.9288}}
+Response from the server: {"data":{"song_id":172,"description":"Nice Song Described here -- short_anandanatana-kedaram-detailed","title":"Nice Song - short_anandanatana-kedaram-detailed","url":"http://www.google.com/songs/short_anandanatana-kedaram-detailed.mp3","song_name":"short_anandanatana-kedaram-detailed","file_sha1":"81B1D7A936874209977CBD8958AE41BDBDE8221E","confidence":315,"offset_seconds":0.9288,"match_time":1.8504328727722168,"offset":20}}
+
+
+anandanatana-kedaram-detailed --- anandanatana-kedaram-detailed
+------------------------------------------------------------------------
+
+
+Done verifying. Match Efficiency: 10 / 10
+]0;murthyraju@murthyraju-VPCSB25FG: ~/Aptana Studio 3 Workspace/sample/apimurthyraju@murthyraju-VPCSB25FG:~/Aptana Studio 3 Workspace/sample/api$ ext[Kit
+exit
+
+Script done on Wed 14 Oct 2015 03:16:13 PM IST

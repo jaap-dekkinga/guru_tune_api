@@ -1,0 +1,198 @@
+from django.shortcuts import render
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.parsers import FileUploadParser
+from rest_framework import status
+from collections import OrderedDict
+import urllib
+import math
+import pdb
+from django.conf import settings
+import os
+
+import MySQLdb
+from dejavu import Dejavu
+from dejavu.recognize import FileRecognizer
+        
+# Create your views here.
+
+
+class RecordUploadView(APIView):
+    parser_classes = (FileUploadParser, )
+
+    def post(self, request, format='mp3'):
+        up_file = request.FILES['file']
+        target_file_name = DEJAVU_UPLOADED_FILES_TEMP + up_file.name
+        song_name, ext = os.path.splitext(up_file.name)
+        destination = open(target_file_name, 'wb+')
+        for chunk in up_file.chunks():
+            destination.write(chunk)
+            destination.close()
+        
+        config = {
+        	"database": {
+        		"host": settings.DEJAVU_DBHOST,
+        		"user": settings.DEJAVU_DBUSER,
+        		"passwd": settings.DEJAVU_DBPASS,
+        		"db": settings.DEJAVU_DATABASE,
+        	}
+        }
+        djv = Dejavu(config)
+        print "starting to finger print"
+        djv.fingerprint_file(target_file_name, [song_name])
+        
+        #djv.fingerprint_file(target_file_name, [".mp3"])
+        print "Done fingerpriting"
+
+        print "Saved"
+
+        # ...
+        # do some stuff with uploaded file
+        # ...
+        return Response(up_file.name, status.HTTP_201_CREATED)
+
+
+class ListObjects(APIView):
+    """
+    View to list all objects
+    """
+    def fetch_elements(self, page_number=1, page_size=10):
+    	print "page_number: " + str(page_number)
+    	db = MySQLdb.connect(settings.DEJAVU_DBHOST,settings.DEJAVU_DBUSER,settings.DEJAVU_DBPASS,settings.DEJAVU_DATABASE)
+    	start = ( page_number - 1 ) * page_size  + 1
+
+    	cursor = db.cursor()
+    	cursor.execute("SELECT VERSION()")
+    	data = cursor.fetchone()
+    	print "Database version : %s " % data
+    	sql = "SELECT * from songs"
+    	cursor.execute(sql)
+    	row_count = cursor.rowcount
+    	print "Total Rows: " + str(row_count)
+
+    	sql = "SELECT song_name FROM songs LIMIT " + str(page_size) + " OFFSET " + str(start)
+    	print sql
+    	songs = []
+    	try:
+    		# Execute the SQL command
+    		cursor.execute(sql)
+    		# Fetch all the rows in a list of lists.
+    		results = cursor.fetchall()
+    		for row in results:
+    			song = {}
+    			song["name"] = row[0]
+    			songs.append(song)
+    			#Now print fetched result
+    			print "song_name=%s" % (song["name"],)
+    	except:
+    		print "Error: unable to fecth data"
+
+
+    	db.close()
+    	return row_count, songs
+
+    def get_count(self):
+        return 50
+
+    def get(self, request):
+        """
+        Return list of elements
+        """
+        page_number = int(request.GET.get("page_number") or 1)
+        page_size = int(request.GET.get("page_size") or 10)
+        total_count, elements = self.fetch_elements(page_number=page_number, 
+            page_size=page_size)
+        
+        total_pages = int(math.ceil(float(total_count)/page_size))
+        next_page = page_number + 1 if page_number < total_pages else None
+        previous_page = page_number - 1 if page_number -1 <=1 else None
+
+        response = {}
+        metadata = OrderedDict() 
+        metadata["Total Count"] = total_count
+        metadata["Total Pages"] = total_pages
+        metadata["Current Page"] = "/api/list?" +\
+            urllib.urlencode({"page_number":page_number,
+                "page_size":page_size})
+        if previous_page:
+            metadata["Previous Page"] = "/api/list?" +\
+                urllib.urlencode({"page_number":previous_page,
+                    "page_size":page_size})
+        if next_page:
+             metadata["Next Page"] = "/api/list?" +\
+                urllib.urlencode({"page_number":next_page,
+                    "page_size":page_size})
+
+        
+        metadata["First Page"] = "/api/list?" +\
+            urllib.urlencode({"page_number":1, "page_size":page_size})
+
+        metadata["Last Page"] = "/api/list?" +\
+            urllib.urlencode({"page_number":total_pages,
+                "page_size":page_size})
+
+        response_dict = {"metadata":metadata,
+            "data":elements
+        }
+            
+        return Response(response_dict)
+
+    def post(self, request):
+        """
+        doc string
+        """
+        return Response({"status":"Not Implemented"})
+
+    def put(self, request):
+        """
+        doc string
+        """
+        return Response({"status":"Not Implemented"})
+
+    def delete(self, request):
+        """
+        doc string
+        """
+        return Response({"status": "Not Implemented"})
+
+
+class VerifyObject(APIView):
+	parser_classes = (FileUploadParser, )
+
+	def get(self, request):
+		return Response({"status":"Not Implemented"})
+
+	def put(self, request):
+		return Response({"status":"Not Implemented"})
+	
+	def delete(self, request):
+		return Response({"status": "Not Implemented"})
+
+	def post(self, request, format='mp3'):
+		up_file = request.FILES['file']
+		target_file_name = DEJAVU_UPLOADED_FILES_TEMP  + up_file.name
+		#song_name, ext = os.path.splitext(up_file.name)
+		destination = open(target_file_name, 'wb+')
+		for chunk in up_file.chunks():
+			destination.write(chunk)
+			destination.close()
+		
+        config = {
+        	"database": {
+        		"host": settings.DEJAVU_DBHOST,
+        		"user": settings.DEJAVU_DBUSER,
+        		"passwd": settings.DEJAVU_DBPASS,
+        		"db": settings.DEJAVU_DATABASE,
+        	}
+        }
+
+        djv = Dejavu(config)
+        return Response(up_file_name)
+        djv = Dejavu(config)
+        print "starting to recognize"
+        song = djv.recognize(FileRecognizer, destination)
+        print "Done recognizing"
+        print song
+        destination.close()
+        #return "Done!"
+        

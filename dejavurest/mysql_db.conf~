@@ -1,0 +1,5 @@
+[client]
+database = 'dejavu'
+#user = 'dejavu'
+#password = 'dejavu123'
+default-character-set = utf8

@@ -1,0 +1,2161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>ValueError at /api/add_record</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h2 span { font-size:80%; color:#666; font-weight:normal; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#666; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#505050; background-color:#dfdfdf; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 0 20px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em;}
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  
+  <script type="text/javascript">
+  //<!--
+    function getElementsByClassName(oElm, strTagName, strClassName){
+        // Written by Jonathan Snook, http://www.snook.ca/jon; Add-ons by Robert Nyman, http://www.robertnyman.com
+        var arrElements = (strTagName == "*" && document.all)? document.all :
+        oElm.getElementsByTagName(strTagName);
+        var arrReturnElements = new Array();
+        strClassName = strClassName.replace(/\-/g, "\-");
+        var oRegExp = new RegExp("(^|\s)" + strClassName + "(\s|$)");
+        var oElement;
+        for(var i=0; i<arrElements.length; i++){
+            oElement = arrElements[i];
+            if(oRegExp.test(oElement.className)){
+                arrReturnElements.push(oElement);
+            }
+        }
+        return (arrReturnElements)
+    }
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(getElementsByClassName(document, 'table', 'vars'));
+      hideAll(getElementsByClassName(document, 'ol', 'pre-context'));
+      hideAll(getElementsByClassName(document, 'ol', 'post-context'));
+      hideAll(getElementsByClassName(document, 'div', 'pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.innerHTML = s.innerHTML == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.innerHTML = link.innerHTML.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+    //-->
+  </script>
+  
+</head>
+<body>
+<div id="summary">
+  <h1>ValueError at /api/add_record</h1>
+  <pre class="exception_value">I/O operation on closed file</pre>
+  <table class="meta">
+
+    <tr>
+      <th>Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th>Request URL:</th>
+      <td>http://localhost:8000/api/add_record</td>
+    </tr>
+
+    <tr>
+      <th>Django Version:</th>
+      <td>1.8.5</td>
+    </tr>
+
+    <tr>
+      <th>Exception Type:</th>
+      <td>ValueError</td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Value:</th>
+      <td><pre>I/O operation on closed file</pre></td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Location:</th>
+      <td>/home/murthyraju/Aptana Studio 3 Workspace/sample/api/views.py in post, line 29</td>
+    </tr>
+
+    <tr>
+      <th>Python Executable:</th>
+      <td>/home/murthyraju/Documents/fl/dejavu/dejavu_env/bin/python</td>
+    </tr>
+    <tr>
+      <th>Python Version:</th>
+      <td>2.7.3</td>
+    </tr>
+    <tr>
+      <th>Python Path:</th>
+      <td><pre>[&#39;/home/murthyraju/Aptana Studio 3 Workspace/sample&#39;,
+ &#39;/opt/AptanaStudio3/plugins/org.python.pydev_2.6.0.2012062515/pysrc&#39;,
+ &#39;/home/murthyraju/Aptana Studio 3 Workspace/sample&#39;,
+ &#39;/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7&#39;,
+ &#39;/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/plat-linux2&#39;,
+ &#39;/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-tk&#39;,
+ &#39;/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-old&#39;,
+ &#39;/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-dynload&#39;,
+ &#39;/usr/lib/python2.7&#39;,
+ &#39;/usr/lib/python2.7/plat-linux2&#39;,
+ &#39;/usr/lib/python2.7/lib-tk&#39;,
+ &#39;/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages&#39;]</pre></td>
+    </tr>
+    <tr>
+      <th>Server time:</th>
+      <td>Thu, 8 Oct 2015 09:50:57 +0000</td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        <li class="frame django">
+          <code>/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/django/core/handlers/base.py</code> in <code>get_response</code>
+
+          
+            <div class="context" id="c139633577389376">
+              
+                <ol start="125" class="pre-context" id="pre139633577389376">
+                
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                    response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                    if response:</pre></li>
+                
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                        break</pre></li>
+                
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>            if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                try:</pre></li>
+                
+                </ol>
+              
+              <ol start="132" class="context-line">
+                <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>
+                                response = wrapped_callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='133' class="post-context" id="post139633577389376">
+                  
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                    # If the view raised an exception, run it through exception</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                    # middleware, and if the exception middleware returns a</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                    # response, use that. Otherwise, reraise the exception.</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                    for middleware_method in self._exception_middleware:</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389376', 'post139633577389376')"><pre>                        response = middleware_method(request, e)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139633577389376')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139633577389376">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>e</td>
+                    <td class="code"><pre>ValueError(&#39;I/O operation on closed file&#39;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver_match</td>
+                    <td class="code"><pre>ResolverMatch(func=api.views.RecordUploadView, args=(), kwargs={}, url_name=None, app_name=None, namespaces=[&#39;api&#39;])</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>middleware_method</td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x2456450&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x1fae990&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/api/add_record,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;7079934&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;multipart/form-data; boundary=----------------------------e0cf064ecbf2&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;6PSAGd3I9iuvskqa27XdayKUIna7Gmny&#39;,\n &#39;DBUS_SESSION_BUS_ADDRESS&#39;: &#39;unix:abstract=/tmp/dbus-AmFbjAF8fq,guid=a73531326f12e98fd76e906b0000006e&#39;,\n &#39;DEFAULTS_PATH&#39;: &#39;/usr/share/gconf/gnome-classic.default.path&#39;,\n &#39;DESKTOP_SESSION&#39;: &#39;gnome-classic&#39;,\n &#39;DISPLAY&#39;: &#39;:0.0&#39;,\n &#39;DJANGO_SETTINGS_MODULE&#39;: &#39;sample.settings&#39;,\n &#39;GATEWAY_INTERFACE&#39;: &#39;CGI/1.1&#39;,\n &#39;GDMSESSION&#39;: &#39;gnome-classic&#39;,\n &#39;GDM_LANG&#39;: &#39;en_US&#39;,\n &#39;GNOME_DESKTOP_SESSION_ID&#39;: &#39;this-is-deprecated&#39;,\n &#39;GNOME_KEYRING_CONTROL&#39;: &#39;/home/murthyraju/.cache/keyring-qoL3ty&#39;,\n &#39;GNOME_KEYRING_PID&#39;: &#39;3291&#39;,\n &#39;GPG_AGENT_INFO&#39;: &#39;/home/murthyraju/.cache/keyring-qoL3ty/gpg:0:1&#39;,\n &#39;GTK_MODULES&#39;: &#39;canberra-gtk-module:canberra-gtk-module&#39;,\n &#39;HOME&#39;: &#39;/home/murthyraju&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_EXPECT&#39;: &#39;100-continue&#39;,\n &#39;HTTP_HOST&#39;: &#39;localhost:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3&#39;,\n &#39;LANG&#39;: &#39;en_US.UTF-8&#39;,\n &#39;LANGUAGE&#39;: &#39;en_US:en&#39;,\n &#39;LIBGL_DRIVERS_PATH&#39;: &#39;/usr/lib/fglrx/dri:/usr/lib32/fglrx/dri&#39;,\n &#39;LOGNAME&#39;: &#39;murthyraju&#39;,\n &#39;MANDATORY_PATH&#39;: &#39;/usr/share/gconf/gnome-classic.mandatory.path&#39;,\n &#39;NLSPATH&#39;: &#39;/usr/dt/lib/nls/msg/%L/%N.cat&#39;,\n &#39;NODE_PATH&#39;: &#39;/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript&#39;,\n &#39;PATH&#39;: &#39;/usr/local/bin:/usr/bin:/bin:/usr/games:/opt/jdk1.7.0_01:/opt/jdk1.7.0_01/bin:/opt/AptanaStudio3&#39;,\n &#39;PATH_INFO&#39;: u&#39;/api/add_record&#39;,\n &#39;PWD&#39;: &#39;/home/murthyraju&#39;,\n &#39;PYDEV_COMPLETER_PYTHONPATH&#39;: &#39;/opt/AptanaStudio3/plugins/org.python.pydev_2.6.0.2012062515/pysrc&#39;,\n &#39;PYDEV_CONSOLE_ENCODING&#39;: &#39;UTF-8&#39;,\n &#39;PYTHONIOENCODING&#39;: &#39;UTF-8&#39;,\n &#39;PYTHONPATH&#39;: &#39;/opt/AptanaStudio3/plugins/org.python.pydev_2.6.0.2012062515/pysrc/pydev_sitecustomize:/home/murthyraju/Aptana Studio 3 Workspace/sample:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/plat-linux2:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-tk:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-old:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-dynload:/usr/lib/python2.7:/usr/lib/python2.7/plat-linux2:/usr/lib/python2.7/lib-tk:/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/site-packages&#39;,\n &#39;QT_ACCESSIBILITY&#39;: &#39;1&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_HOST&#39;: &#39;&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;ccdev.bookconnect.in&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;WSGIServer/0.1 Python/2.7.3&#39;,\n &#39;SESSION_MANAGER&#39;: &#39;local/murthyraju-VPCSB25FG:@/tmp/.ICE-unix/3308,unix/murthyraju-VPCSB25FG:/tmp/.ICE-unix/3308&#39;,\n &#39;SHELL&#39;: &#39;/bin/bash&#39;,\n &#39;SSH_AGENT_PID&#39;: &#39;3354&#39;,\n &#39;SSH_AUTH_SOCK&#39;: &#39;/home/murthyraju/.cache/keyring-qoL3ty/ssh&#39;,\n &#39;TZ&#39;: &#39;UTC&#39;,\n &#39;UBUNTU_MENUPROXY&#39;: &#39;libappmenu.so&#39;,\n &#39;USER&#39;: &#39;murthyraju&#39;,\n &#39;USERNAME&#39;: &#39;murthyraju&#39;,\n &#39;WINDOWPATH&#39;: &#39;7&#39;,\n &#39;XAUTHORITY&#39;: &#39;/var/run/gdm/auth-for-murthyraju-FMxmnl/database&#39;,\n &#39;XDG_CONFIG_DIRS&#39;: &#39;/etc/xdg/xdg-gnome-classic:/etc/xdg&#39;,\n &#39;XDG_CURRENT_DESKTOP&#39;: &#39;GNOME&#39;,\n &#39;XDG_DATA_DIRS&#39;: &#39;/usr/share/gnome-classic:/usr/share/gnome:/usr/local/share/:/usr/share/&#39;,\n &#39;XDG_SESSION_COOKIE&#39;: &#39;9c301007deb941e9361918c80000000c-1444279385.446901-897751448&#39;,\n &#39;XFILESEARCHPATH&#39;: &#39;/usr/dt/app-defaults/%L/Dt&#39;,\n &#39;http_proxy&#39;: &#39;http://54.187.181.1:20999/&#39;,\n &#39;https_proxy&#39;: &#39;https://54.187.181.1:20999/&#39;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7eff107fc270&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class wsgiref.util.FileWrapper at 0x21a8258&gt;,\n &#39;wsgi.input&#39;: &lt;socket._fileobject object at 0x7efef9ba3f50&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: True,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function RecordUploadView at 0x7efef9b95cf8&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function RecordUploadView at 0x7efef9b95cf8&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>resolver</td>
+                    <td class="code"><pre>&lt;RegexURLResolver &#39;sample.urls&#39; (None:None) ^/&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>urlconf</td>
+                    <td class="code"><pre>&#39;sample.urls&#39;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        <li class="frame django">
+          <code>/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py</code> in <code>wrapped_view</code>
+
+          
+            <div class="context" id="c139633577389736">
+              
+                <ol start="51" class="pre-context" id="pre139633577389736">
+                
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li>
+                
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li>
+                
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li>
+                
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    # function.</pre></li>
+                
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    def wrapped_view(*args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="58" class="context-line">
+                <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>
+                    return view_func(*args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='59' class="post-context" id="post139633577389736">
+                  
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    wrapped_view.csrf_exempt = True</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389736', 'post139633577389736')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139633577389736')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139633577389736">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>(&lt;WSGIRequest: POST &#39;/api/add_record&#39;&gt;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_func</td>
+                    <td class="code"><pre>&lt;function RecordUploadView at 0x7efef9b95c80&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        <li class="frame django">
+          <code>/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/django/views/generic/base.py</code> in <code>view</code>
+
+          
+            <div class="context" id="c139633577388224">
+              
+                <ol start="64" class="pre-context" id="pre139633577388224">
+                
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>        def view(request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>            self = cls(**initkwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>            if hasattr(self, &#39;get&#39;) and not hasattr(self, &#39;head&#39;):</pre></li>
+                
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>                self.head = self.get</pre></li>
+                
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>            self.request = request</pre></li>
+                
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>            self.args = args</pre></li>
+                
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>            self.kwargs = kwargs</pre></li>
+                
+                </ol>
+              
+              <ol start="71" class="context-line">
+                <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>
+                        return self.dispatch(request, *args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='72' class="post-context" id="post139633577388224">
+                  
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>        # take name and docstring from class</pre></li>
+                  
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>        update_wrapper(view, cls, updated=())</pre></li>
+                  
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>        # and possible attributes set by decorators</pre></li>
+                  
+                  <li onclick="toggle('pre139633577388224', 'post139633577388224')"><pre>        # like csrf_exempt from dispatch</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139633577388224')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139633577388224">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>initkwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;api.views.RecordUploadView object at 0x7efef9d5b510&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&quot;&lt;WSGIRequest\npath:/api/add_record,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{&#39;CONTENT_LENGTH&#39;: &#39;7079934&#39;,\n &#39;CONTENT_TYPE&#39;: &#39;multipart/form-data; boundary=----------------------------e0cf064ecbf2&#39;,\n u&#39;CSRF_COOKIE&#39;: u&#39;6PSAGd3I9iuvskqa27XdayKUIna7Gmny&#39;,\n &#39;DBUS_SESSION_BUS_ADDRESS&#39;: &#39;unix:abstract=/tmp/dbus-AmFbjAF8fq,guid=a73531326f12e98fd76e906b0000006e&#39;,\n &#39;DEFAULTS_PATH&#39;: &#39;/usr/share/gconf/gnome-classic.default.path&#39;,\n &#39;DESKTOP_SESSION&#39;: &#39;gnome-classic&#39;,\n &#39;DISPLAY&#39;: &#39;:0.0&#39;,\n &#39;DJANGO_SETTINGS_MODULE&#39;: &#39;sample.settings&#39;,\n &#39;GATEWAY_INTERFACE&#39;: &#39;CGI/1.1&#39;,\n &#39;GDMSESSION&#39;: &#39;gnome-classic&#39;,\n &#39;GDM_LANG&#39;: &#39;en_US&#39;,\n &#39;GNOME_DESKTOP_SESSION_ID&#39;: &#39;this-is-deprecated&#39;,\n &#39;GNOME_KEYRING_CONTROL&#39;: &#39;/home/murthyraju/.cache/keyring-qoL3ty&#39;,\n &#39;GNOME_KEYRING_PID&#39;: &#39;3291&#39;,\n &#39;GPG_AGENT_INFO&#39;: &#39;/home/murthyraju/.cache/keyring-qoL3ty/gpg:0:1&#39;,\n &#39;GTK_MODULES&#39;: &#39;canberra-gtk-module:canberra-gtk-module&#39;,\n &#39;HOME&#39;: &#39;/home/murthyraju&#39;,\n &#39;HTTP_ACCEPT&#39;: &#39;*/*&#39;,\n &#39;HTTP_EXPECT&#39;: &#39;100-continue&#39;,\n &#39;HTTP_HOST&#39;: &#39;localhost:8000&#39;,\n &#39;HTTP_USER_AGENT&#39;: &#39;curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3&#39;,\n &#39;LANG&#39;: &#39;en_US.UTF-8&#39;,\n &#39;LANGUAGE&#39;: &#39;en_US:en&#39;,\n &#39;LIBGL_DRIVERS_PATH&#39;: &#39;/usr/lib/fglrx/dri:/usr/lib32/fglrx/dri&#39;,\n &#39;LOGNAME&#39;: &#39;murthyraju&#39;,\n &#39;MANDATORY_PATH&#39;: &#39;/usr/share/gconf/gnome-classic.mandatory.path&#39;,\n &#39;NLSPATH&#39;: &#39;/usr/dt/lib/nls/msg/%L/%N.cat&#39;,\n &#39;NODE_PATH&#39;: &#39;/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript&#39;,\n &#39;PATH&#39;: &#39;/usr/local/bin:/usr/bin:/bin:/usr/games:/opt/jdk1.7.0_01:/opt/jdk1.7.0_01/bin:/opt/AptanaStudio3&#39;,\n &#39;PATH_INFO&#39;: u&#39;/api/add_record&#39;,\n &#39;PWD&#39;: &#39;/home/murthyraju&#39;,\n &#39;PYDEV_COMPLETER_PYTHONPATH&#39;: &#39;/opt/AptanaStudio3/plugins/org.python.pydev_2.6.0.2012062515/pysrc&#39;,\n &#39;PYDEV_CONSOLE_ENCODING&#39;: &#39;UTF-8&#39;,\n &#39;PYTHONIOENCODING&#39;: &#39;UTF-8&#39;,\n &#39;PYTHONPATH&#39;: &#39;/opt/AptanaStudio3/plugins/org.python.pydev_2.6.0.2012062515/pysrc/pydev_sitecustomize:/home/murthyraju/Aptana Studio 3 Workspace/sample:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/plat-linux2:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-tk:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-old:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-dynload:/usr/lib/python2.7:/usr/lib/python2.7/plat-linux2:/usr/lib/python2.7/lib-tk:/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/site-packages&#39;,\n &#39;QT_ACCESSIBILITY&#39;: &#39;1&#39;,\n &#39;QUERY_STRING&#39;: &#39;&#39;,\n &#39;REMOTE_ADDR&#39;: &#39;127.0.0.1&#39;,\n &#39;REMOTE_HOST&#39;: &#39;&#39;,\n &#39;REQUEST_METHOD&#39;: &#39;POST&#39;,\n &#39;SCRIPT_NAME&#39;: u&#39;&#39;,\n &#39;SERVER_NAME&#39;: &#39;ccdev.bookconnect.in&#39;,\n &#39;SERVER_PORT&#39;: &#39;8000&#39;,\n &#39;SERVER_PROTOCOL&#39;: &#39;HTTP/1.1&#39;,\n &#39;SERVER_SOFTWARE&#39;: &#39;WSGIServer/0.1 Python/2.7.3&#39;,\n &#39;SESSION_MANAGER&#39;: &#39;local/murthyraju-VPCSB25FG:@/tmp/.ICE-unix/3308,unix/murthyraju-VPCSB25FG:/tmp/.ICE-unix/3308&#39;,\n &#39;SHELL&#39;: &#39;/bin/bash&#39;,\n &#39;SSH_AGENT_PID&#39;: &#39;3354&#39;,\n &#39;SSH_AUTH_SOCK&#39;: &#39;/home/murthyraju/.cache/keyring-qoL3ty/ssh&#39;,\n &#39;TZ&#39;: &#39;UTC&#39;,\n &#39;UBUNTU_MENUPROXY&#39;: &#39;libappmenu.so&#39;,\n &#39;USER&#39;: &#39;murthyraju&#39;,\n &#39;USERNAME&#39;: &#39;murthyraju&#39;,\n &#39;WINDOWPATH&#39;: &#39;7&#39;,\n &#39;XAUTHORITY&#39;: &#39;/var/run/gdm/auth-for-murthyraju-FMxmnl/database&#39;,\n &#39;XDG_CONFIG_DIRS&#39;: &#39;/etc/xdg/xdg-gnome-classic:/etc/xdg&#39;,\n &#39;XDG_CURRENT_DESKTOP&#39;: &#39;GNOME&#39;,\n &#39;XDG_DATA_DIRS&#39;: &#39;/usr/share/gnome-classic:/usr/share/gnome:/usr/local/share/:/usr/share/&#39;,\n &#39;XDG_SESSION_COOKIE&#39;: &#39;9c301007deb941e9361918c80000000c-1444279385.446901-897751448&#39;,\n &#39;XFILESEARCHPATH&#39;: &#39;/usr/dt/app-defaults/%L/Dt&#39;,\n &#39;http_proxy&#39;: &#39;http://54.187.181.1:20999/&#39;,\n &#39;https_proxy&#39;: &#39;https://54.187.181.1:20999/&#39;,\n &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7eff107fc270&gt;,\n &#39;wsgi.file_wrapper&#39;: &lt;class wsgiref.util.FileWrapper at 0x21a8258&gt;,\n &#39;wsgi.input&#39;: &lt;socket._fileobject object at 0x7efef9ba3f50&gt;,\n &#39;wsgi.multiprocess&#39;: False,\n &#39;wsgi.multithread&#39;: True,\n &#39;wsgi.run_once&#39;: False,\n &#39;wsgi.url_scheme&#39;: &#39;http&#39;,\n &#39;wsgi.version&#39;: (1, 0)}&gt;&quot;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cls</td>
+                    <td class="code"><pre>&lt;class &#39;api.views.RecordUploadView&#39;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        <li class="frame user">
+          <code>/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/rest_framework/views.py</code> in <code>dispatch</code>
+
+          
+            <div class="context" id="c139633577389088">
+              
+                <ol start="461" class="pre-context" id="pre139633577389088">
+                
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>            response = handler(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>        except Exception as exc:</pre></li>
+                
+                </ol>
+              
+              <ol start="468" class="context-line">
+                <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>
+                        response = self.handle_exception(exc)</pre> <span>...</span></li></ol>
+              
+                <ol start='469' class="post-context" id="post139633577389088">
+                  
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>        return self.response</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>    def options(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389088', 'post139633577389088')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139633577389088')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139633577389088">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ValueError(&#39;I/O operation on closed file&#39;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;api.views.RecordUploadView object at 0x7efef9d5b510&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request object at 0x7efef9d5b890&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method RecordUploadView.post of &lt;api.views.RecordUploadView object at 0x7efef9d5b510&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        <li class="frame user">
+          <code>/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/rest_framework/views.py</code> in <code>dispatch</code>
+
+          
+            <div class="context" id="c139633577389664">
+              
+                <ol start="458" class="pre-context" id="pre139633577389664">
+                
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>            # Get the appropriate handler method</pre></li>
+                
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>            if request.method.lower() in self.http_method_names:</pre></li>
+                
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>                handler = getattr(self, request.method.lower(),</pre></li>
+                
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="465" class="context-line">
+                <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>
+                        response = handler(request, *args, **kwargs)</pre> <span>...</span></li></ol>
+              
+                <ol start='466' class="post-context" id="post139633577389664">
+                  
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>            response = self.handle_exception(exc)</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389664', 'post139633577389664')"><pre>        return self.response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139633577389664')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139633577389664">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ValueError(&#39;I/O operation on closed file&#39;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;api.views.RecordUploadView object at 0x7efef9d5b510&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request object at 0x7efef9d5b890&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method RecordUploadView.post of &lt;api.views.RecordUploadView object at 0x7efef9d5b510&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        <li class="frame user">
+          <code>/home/murthyraju/Aptana Studio 3 Workspace/sample/api/views.py</code> in <code>post</code>
+
+          
+            <div class="context" id="c139633577389880">
+              
+                <ol start="22" class="pre-context" id="pre139633577389880">
+                
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>    def post(self, request, format=&#39;mp3&#39;):</pre></li>
+                
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        up_file = request.FILES[&#39;file&#39;]</pre></li>
+                
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        target_file_name = settings.DEJAVU_UPLOADED_FILES_TEMP + up_file.name</pre></li>
+                
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        song_name, ext = os.path.splitext(up_file.name)</pre></li>
+                
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        destination = open(target_file_name, &#39;wb+&#39;)</pre></li>
+                
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        for chunk in up_file.chunks():</pre></li>
+                
+                </ol>
+              
+              <ol start="29" class="context-line">
+                <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>
+                        destination.write(chunk)</pre> <span>...</span></li></ol>
+              
+                <ol start='30' class="post-context" id="post139633577389880">
+                  
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        destination.close()</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        </pre></li>
+                  
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        config = {</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        	&quot;database&quot;: {</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        		&quot;host&quot;: settings.DEJAVU_DBHOST,</pre></li>
+                  
+                  <li onclick="toggle('pre139633577389880', 'post139633577389880')"><pre>        		&quot;user&quot;: settings.DEJAVU_DBUSER,</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '139633577389880')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v139633577389880">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>format</td>
+                    <td class="code"><pre>&#39;mp3&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>chunk</td>
+                    <td class="code"><pre>&#39;\x94o\xde\x98\x06\xcbF\xd71l`\xb5\xe7\xcd\xc3w\xf3\xb3/0\x18[Wka\xaaMLE\xdf\xe9\xfc\xf2\xbb\x19\x97\xd7\x81\x01\x0ceFnrl]\xd9&amp;\xa6\\\xeb\x14\xba\x86\xfe\x8f\x04v\xb0&quot;0\x03\x95\xe4J6A\xa5\xf1\xbb\xd3_\xd3\xc0\xef\x81`\x13\xd9\xcf\xff\xfee\x0f\xbe\x9c\xf9\xe4o\xb3\xf1\x16\xbf\xfe\x9f\xfe\x92I\x01oH\x96\xe9\xc3i\xfch\xea\xc2uV\x15\xf3\x14\xdb\xae[\x04I\x9a4\x080[6\xdc\xd9h\x1b{\xd5\x87\x93\xc6\xc5\x08\xae\xa1(a\xc0\x8b\r&quot;\xc4]\x99\xb2\xcf\xa9\x93\x06\xf3\xe7\x1c.\x89\xb1\xff\x15\xeb\x01vx\xcdHF7\xd5u\x126u\x87_80\xe0\xd3\x1b\x9f\rXj\x1b\xff\xff\xfeD\x04IO\xc8\xff\xdfM\xdbjWUXT\x06\xf9\xf2yN\x92\x8e\xf8\xe7/\x81\xcd\xebv[\&#39;\xe5W\xa0\xa4\xed\xf6x]\xde\xbb\x94&quot;\xd6\xad\x7f\xe1~\xa4(ZU1^27\x9cL\xc9\x88\xdb\x8f\xad67o6\x84\xe4\xdfZ\xc0]R}a\xcb\xff\x8ao:\xc4\xdf8o\xff\xfb\x92@\xc6\x00\x03\xc4IXS\x0f\x93lb\x05*\xf9c\x0f[\x8c\xf0\xb1\\\xe7\xbd\xebQr\x14\xeb\xa4\xfc=n\xec7\xff\xff\xd2\xc6Qf\xd8U\xca3\xfbz\x1a\x8f\xb3\xda\xb0UeX\x94\x92\x02\xdd.N\xa4\xd0\xc3y\x86\xf4\x81\xca\xce\xefK\x86\x9d\\\xa0I_\xc9\xe6\x93l\xd2U\x9f\xc9\x88\xd6\xd9a\xa2\x14\x95\xc6\xc3\\\x18:\xb9\xea\&#39;\xb9\xdc\xfed\xd0\xef\xa9\x01\x99\xd3Q%:\xcb\xbf+\xbae\xaa\xcd\xbc\x99\x1e\r{?\xff\xff\xf9\xb6\xa0\x9fb\x9e\x85\xd1W\xa5\xfb\xb5-\xacPbRH[dM\x11\x86\xc0\xb9h\xe0\x96\x1a\x14!\x8f\xc9=.\x1b\x05\x15\xf1\x8a\xea\xd9|\xdd\xab\xc7\xc5#b@(\x85\x04|\xb10\x950\xe5&amp;\xabJ\x81\x9a\x8e/\xe0\xf0\x9a\x14i_v\xda\xd4Oy\x99\tO\xff\xe6\x07\x06\x81&quot;\x8c\x05E#\x19(\x8f\xa9\x8fC\xac_\xec\x91R-\x8b\xcfr\x92H\x0bu\x05\xb9t\xcbV\x07\xc2\xcb\x08\x08\x84\xf5I\xe9\xf9\xfd\xe3\x05\x13#\xfbV~M\x979\x02}\x8b\xd3R\xcbz\xa1\x81\x91\x1ap\x9f1\x12\x10\xe0\n#\x08\xa8yh(\xd4\xfaF\x85v2[\x1fr\xe9d\xddRY\x91T\xa3\xac\xe6j\xb1\x964Q\xe9i|\xbf\xff\xff\xf4\x08\xa3\xdcD&amp;4h \xeb\xaa=8\xa1\xefAU{\x9a:Ze\xa2R$\&#39;#ti\xa4;J\xf4\x03\x0c\x03p\xaa\xfd\xfc\xf7\x82\xca&quot;\xe75\xbe\xe3\x9e5d\xda\xdd\x9b\x94]\xcd\xf7K\xb3S\xce\x17\xd2\xa4$\x90\xc7\x1b\xc3Z\xbeb\x7fs\xda\xe9:\xac\xc4\xac\xcaf\xad\xbf\x88\xeaM\x98\x82\x83\x7f\xff\xd9\x185\xa0\xff\xfb\x92@\xb5\x80\x02\xce*WQ\xefb\xd4Ze:\xda1\xe8Z\x8d4\xafZ\xecb+Q\x80\x14\xec)&lt;-n\x9b\x0el$Y\xc2\xae\xb5nr\xba\xf7u9\xc5IE\xcf\xa8\x82\x11\x11\x11\x11&quot;SH\x0c1w]\x8bI\x85[yV(\xed\x9f\xe4\xc3\xef\n\xf1{\xfeRqqf\xf3\xa7o\xec\x8bJ\xc1\x8e\xf0\xfe\xe9^2m\x04\x89\xa1\x87\xdb/g\xfa\xcc\xf0\x1c\xa0\xe9\xebN\xbc.\xb7ZF\xbf\x83\xa6\xe7:\xe5\xb1\xf6\xa7\xb0\xcb\x8fY\xb1\x02%&gt;a\xf9O\xff\xff\xfa\x07\xe8Z\xfaC\xb2\xa2J\x05&quot;SHo\xf7\x00\xc7\xe4\x8c\xbb_\xaa2z\xd9\xcf(#\xff\x07lI69\x84\x97\x1dvnf\x9f?\xa7\xa5\xde\xe9\x13&quot;W\x03eB\xb0\x19\x88\xe1\xf9\xb0\xe0\xe5\xa9\x1f\xdb\x12&gt;~y\xa8\x1f\\7r\x07\x9f\xb8\x85?\xffQ\xc5!+QG&gt;\xa9\xcaV+\x01\xb45\xbc\xb7_\n\xd2I$\x92@$\x00\x14Oh\xa6\xca\x10\xd1z$\xc7\x0c{c\xf9\xdb\x92(\xeaA\x8c\x10\xcfD\xe15\r\x18R\xdfp\xc4\x98{e\xb0q\x80\xc2\xef\xa9#\xd5d\x12\xdb\xdar\x9a\xd6\x17p\xa2\xdd\xe4U\xe3\x8b\xeaF\xc8\x9a\x87\xac\xd2\x9f\xff\xff\xfa\x85\x92\xfa\xff\xd8\xd5!Y\xe6z\xe2P\x92\t@\x92\x00*B=\xc1\xa4\xde\x9ah?\xcd\xc3\xd4$\xa7\x1b\x9f\x8f\xaf\xd1!\\\x84+\x19\x1bm\x8b)\x08qlPD\x96\x9a\xc4&amp;P\x00\xb8h_s\xe6\x83\xc5C\x817U\xcf\\\x92]\xd6\xdd\x03}My\x9aZ\xb6\x9a\n\xcd\x7f\xff\xd1D\xbb\xfbj\xf0\xba\x91\xdb,\x81\xc2f\x14 R\xef6\x96\xff\xfb\x92@\xb5\x80\x02\xf3.\xd6{\x0fz\xd8Y\xc5J\xcdc\x08[\n\xa4\xb1a\xa7\xadkqr\x94\xab\xf4\xf7\xb5nVT\x12A\x01Ng\x19-H:\x95ey\xf3\x15\xc1\xff\x18\xfdO\xd3\xb76\x1e\xca\x8a\xaax\x90\xa0\xaa\n\xebk\xedq\xbb\x0e\x12\xd1\xf8l\x17\x05\xaaa\x9d\xd9\x8a\xcf\x99\x99 ?\xb2\x14\n&lt;\x98}J0\xf4O\xbeR\xa6\xa0\xe2\x1d\x08\xab\xa4X\x96\x7f\x04\xbf\xff\xbe\x8f\xc8\xda\xa4\x7f\xfe\xb5\xcf\xb7|\xf1yPUI) \xed\xd18yB#\xc4S-\xa55\x1f\x05\xf8a\xb7\x9eR\xa61\xcc\x06\xbb\xe8\xda\x88\xba:_&gt;\xc5\x87\xd9\xc7l\xaa\x9b\x8b\xd2`h\xcc\xc5\xef=\xcau\xd3\xf9\xe0g?9\xb0\x85o\xfe/\xf9\xdf\x93\xe6\x9db\x86\xaa\xff\xff\xaa\xb3\x8f\xf5&lt;\xabC\xe3]\x9egS\xd9J\x90\xfa\xfaU\x02\x01% \xa5\xaa`\x1dWy3j9v\xce|\x1fxEa\xad\xdc\x17;\xc3L\x9b\xd3Y\x96Qp\xed^V7~\x87$\x049*o\xa0\x0fh\x96\x0f\x0e\x91\xa0\xce\xa2\xc3\xc8)i\xac\xe2\xea\x91\x1f/^\xa1\x03\x1b\xf8\xf3Y\x82A\xc97:\xeb7Z5\xaf\xa7\xff\xff\xff\xfd\x1f=\xb3\x96&gt;\x8f%\xfc\xff1&amp;\xa1\x079R5\x95\x95\x05\x00\xb8%\xd02\xb2\xf2\xab\x94\x12,\xdd... &lt;trimmed 186809 bytes string&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>destination</td>
+                    <td class="code"><pre>&lt;closed file u&#39;/home/murthyraju/Documents/fl/dejavu/code/samples/short/11 Sri Mallikarjuna Sthothram.mp3&#39;, mode &#39;wb+&#39; at 0x7efef9c654b0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request object at 0x7efef9d5b890&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>song_name</td>
+                    <td class="code"><pre>u&#39;11 Sri Mallikarjuna Sthothram&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>ext</td>
+                    <td class="code"><pre>u&#39;.mp3&#39;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>up_file</td>
+                    <td class="code"><pre>&lt;TemporaryUploadedFile: 11 Sri Mallikarjuna Sthothram.mp3 (application/octet-stream)&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;api.views.RecordUploadView object at 0x7efef9d5b510&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>target_file_name</td>
+                    <td class="code"><pre>u&#39;/home/murthyraju/Documents/fl/dejavu/code/samples/short/11 Sri Mallikarjuna Sthothram.mp3&#39;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+    </ul>
+  </div>
+  
+  <form action="http://dpaste.com/" name="pasteform" id="pasteform" method="post">
+
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="ValueError at /api/add_record">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: POST
+Request URL: http://localhost:8000/api/add_record
+
+Django Version: 1.8.5
+Python Version: 2.7.3
+Installed Applications:
+(&#39;django.contrib.admin&#39;,
+ &#39;django.contrib.auth&#39;,
+ &#39;django.contrib.contenttypes&#39;,
+ &#39;django.contrib.sessions&#39;,
+ &#39;django.contrib.messages&#39;,
+ &#39;django.contrib.staticfiles&#39;,
+ &#39;rest_framework&#39;,
+ &#39;rest_framework.authtoken&#39;)
+Installed Middleware:
+(&#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+ &#39;django.middleware.common.CommonMiddleware&#39;,
+ &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.SessionAuthenticationMiddleware&#39;,
+ &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+ &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;,
+ &#39;django.middleware.security.SecurityMiddleware&#39;)
+
+
+Traceback:
+File "/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/django/core/handlers/base.py" in get_response
+  132.                     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+File "/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/django/views/decorators/csrf.py" in wrapped_view
+  58.         return view_func(*args, **kwargs)
+File "/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/django/views/generic/base.py" in view
+  71.             return self.dispatch(request, *args, **kwargs)
+File "/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/rest_framework/views.py" in dispatch
+  468.             response = self.handle_exception(exc)
+File "/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages/rest_framework/views.py" in dispatch
+  465.             response = handler(request, *args, **kwargs)
+File "/home/murthyraju/Aptana Studio 3 Workspace/sample/api/views.py" in post
+  29.             destination.write(chunk)
+
+Exception Type: ValueError at /api/add_record
+Exception Value: I/O operation on closed file
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public Web site">
+  </div>
+</form>
+</div>
+
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+  <h3 id="files-info">FILES</h3>
+  
+    <table class="req">
+        <thead>
+            <tr>
+                <th>Variable</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>file</td>
+                    <td class="code"><pre>&lt;TemporaryUploadedFile: 11 Sri Mallikarjuna Sthothram.mp3 (application/octet-stream)&gt;</pre></td>
+                </tr>
+            
+        </tbody>
+    </table>
+  
+
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Variable</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>PYTHONIOENCODING</td>
+          <td class="code"><pre>&#39;UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#39;HTTP/1.1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GNOME_DESKTOP_SESSION_ID</td>
+          <td class="code"><pre>&#39;this-is-deprecated&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>http_proxy</td>
+          <td class="code"><pre>&#39;http://54.187.181.1:20999/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#39;WSGIServer/0.1 Python/2.7.3&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>u&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_CURRENT_DESKTOP</td>
+          <td class="code"><pre>&#39;GNOME&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LIBGL_DRIVERS_PATH</td>
+          <td class="code"><pre>&#39;/usr/lib/fglrx/dri:/usr/lib32/fglrx/dri&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#39;POST&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGNAME</td>
+          <td class="code"><pre>&#39;murthyraju&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USER</td>
+          <td class="code"><pre>&#39;murthyraju&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GNOME_KEYRING_CONTROL</td>
+          <td class="code"><pre>&#39;/home/murthyraju/.cache/keyring-qoL3ty&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>&#39;/usr/local/bin:/usr/bin:/bin:/usr/games:/opt/jdk1.7.0_01:/opt/jdk1.7.0_01/bin:/opt/AptanaStudio3&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISPLAY</td>
+          <td class="code"><pre>&#39;:0.0&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SSH_AGENT_PID</td>
+          <td class="code"><pre>&#39;3354&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#39;en_US.UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;socket._fileobject object at 0x7efef9ba3f50&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHELL</td>
+          <td class="code"><pre>&#39;/bin/bash&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TZ</td>
+          <td class="code"><pre>&#39;UTC&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_SESSION_COOKIE</td>
+          <td class="code"><pre>&#39;9c301007deb941e9361918c80000000c-1444279385.446901-897751448&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE</td>
+          <td class="code"><pre>&#39;en_US:en&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_MANAGER</td>
+          <td class="code"><pre>&#39;local/murthyraju-VPCSB25FG:@/tmp/.ICE-unix/3308,unix/murthyraju-VPCSB25FG:/tmp/.ICE-unix/3308&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_DATA_DIRS</td>
+          <td class="code"><pre>&#39;/usr/share/gnome-classic:/usr/share/gnome:/usr/local/share/:/usr/share/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#39;127.0.0.1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANDATORY_PATH</td>
+          <td class="code"><pre>&#39;/usr/share/gconf/gnome-classic.mandatory.path&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYDEV_CONSOLE_ENCODING</td>
+          <td class="code"><pre>&#39;UTF-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#39;http&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>https_proxy</td>
+          <td class="code"><pre>&#39;https://54.187.181.1:20999/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QT_ACCESSIBILITY</td>
+          <td class="code"><pre>&#39;1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WINDOWPATH</td>
+          <td class="code"><pre>&#39;7&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#39;8000&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#39;7079934&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GPG_AGENT_INFO</td>
+          <td class="code"><pre>&#39;/home/murthyraju/.cache/keyring-qoL3ty/gpg:0:1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOME</td>
+          <td class="code"><pre>&#39;/home/murthyraju&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERNAME</td>
+          <td class="code"><pre>&#39;murthyraju&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_EXPECT</td>
+          <td class="code"><pre>&#39;100-continue&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHONPATH</td>
+          <td class="code"><pre>&#39;/opt/AptanaStudio3/plugins/org.python.pydev_2.6.0.2012062515/pysrc/pydev_sitecustomize:/home/murthyraju/Aptana Studio 3 Workspace/sample:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/plat-linux2:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-tk:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-old:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/lib-dynload:/usr/lib/python2.7:/usr/lib/python2.7/plat-linux2:/usr/lib/python2.7/lib-tk:/home/murthyraju/Documents/fl/dejavu/dejavu_env/local/lib/python2.7/site-packages:/home/murthyraju/Documents/fl/dejavu/dejavu_env/lib/python2.7/site-packages&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SSH_AUTH_SOCK</td>
+          <td class="code"><pre>&#39;/home/murthyraju/.cache/keyring-qoL3ty/ssh&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GTK_MODULES</td>
+          <td class="code"><pre>&#39;canberra-gtk-module:canberra-gtk-module&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GDMSESSION</td>
+          <td class="code"><pre>&#39;gnome-classic&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULTS_PATH</td>
+          <td class="code"><pre>&#39;/usr/share/gconf/gnome-classic.default.path&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#39;curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#39;localhost:8000&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NLSPATH</td>
+          <td class="code"><pre>&#39;/usr/dt/lib/nls/msg/%L/%N.cat&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DBUS_SESSION_BUS_ADDRESS</td>
+          <td class="code"><pre>&#39;unix:abstract=/tmp/dbus-AmFbjAF8fq,guid=a73531326f12e98fd76e906b0000006e&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XAUTHORITY</td>
+          <td class="code"><pre>&#39;/var/run/gdm/auth-for-murthyraju-FMxmnl/database&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#39;*/*&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DESKTOP_SESSION</td>
+          <td class="code"><pre>&#39;gnome-classic&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#39;ccdev.bookconnect.in&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XDG_CONFIG_DIRS</td>
+          <td class="code"><pre>&#39;/etc/xdg/xdg-gnome-classic:/etc/xdg&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GNOME_KEYRING_PID</td>
+          <td class="code"><pre>&#39;3291&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>UBUNTU_MENUPROXY</td>
+          <td class="code"><pre>&#39;libappmenu.so&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE</td>
+          <td class="code"><pre>u&#39;6PSAGd3I9iuvskqa27XdayKUIna7Gmny&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7eff107fc270&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#39;CGI/1.1&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYDEV_COMPLETER_PYTHONPATH</td>
+          <td class="code"><pre>&#39;/opt/AptanaStudio3/plugins/org.python.pydev_2.6.0.2012062515/pysrc&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GDM_LANG</td>
+          <td class="code"><pre>&#39;en_US&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NODE_PATH</td>
+          <td class="code"><pre>&#39;/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PWD</td>
+          <td class="code"><pre>&#39;/home/murthyraju&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#39;sample.settings&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#39;multipart/form-data; boundary=----------------------------e0cf064ecbf2&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>XFILESEARCHPATH</td>
+          <td class="code"><pre>&#39;/usr/dt/app-defaults/%L/Dt&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>u&#39;/api/add_record&#39;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>sample.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Setting</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>SECURE_BROWSER_XSS_FILTER</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#39;en-us&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#39;sample.urls&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>&#39;/home/murthyraju/Aptana Studio 3 Workspace/sample&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#39;utf-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#39;django.contrib.sessions.serializers.JSONSerializer&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#39;django.contrib.messages.storage.fallback.FallbackStorage&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#39;[Django] &#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEJAVU_DBHOST</td>
+          <td class="code"><pre>&#39;localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>(&#39;django.contrib.staticfiles.finders.FileSystemFinder&#39;,
+ &#39;django.contrib.staticfiles.finders.AppDirectoriesFinder&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#39;default&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#39;sessionid&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>(&#39;%H:%M:%S&#39;, &#39;%H:%M:%S.%f&#39;, &#39;%H:%M&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#39;default&#39;: {&#39;ATOMIC_REQUESTS&#39;: False,
+             &#39;AUTOCOMMIT&#39;: True,
+             &#39;CONN_MAX_AGE&#39;: 0,
+             &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
+             &#39;HOST&#39;: &#39;&#39;,
+             &#39;NAME&#39;: &#39;&#39;,
+             &#39;OPTIONS&#39;: {&#39;read_default_file&#39;: &#39;/home/murthyraju/Aptana Studio 3 Workspace/sample/mysql_db.conf&#39;},
+             &#39;PASSWORD&#39;: u&#39;********************&#39;,
+             &#39;PORT&#39;: &#39;&#39;,
+             &#39;TEST&#39;: {&#39;CHARSET&#39;: None,
+                      &#39;COLLATION&#39;: None,
+                      &#39;MIRROR&#39;: None,
+                      &#39;NAME&#39;: None},
+             &#39;TIME_ZONE&#39;: &#39;UTC&#39;,
+             &#39;USER&#39;: &#39;&#39;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>u&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>(&#39;django.core.files.uploadhandler.MemoryFileUploadHandler&#39;,
+ &#39;django.core.files.uploadhandler.TemporaryFileUploadHandler&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CONTENT_TYPE</td>
+          <td class="code"><pre>&#39;text/html&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#39;F Y&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_STORAGE</td>
+          <td class="code"><pre>&#39;django.contrib.staticfiles.storage.StaticFilesStorage&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#39;default&#39;: {&#39;BACKEND&#39;: &#39;django.core.cache.backends.locmem.LocMemCache&#39;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEJAVU_DATABASE</td>
+          <td class="code"><pre>&#39;dejavu&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#39;root@localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#39;/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE_CLASSES</td>
+          <td class="code"><pre>(&#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+ &#39;django.middleware.common.CommonMiddleware&#39;,
+ &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.SessionAuthenticationMiddleware&#39;,
+ &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+ &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;,
+ &#39;django.middleware.security.SecurityMiddleware&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#39;,&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>u&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#39;django_language&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEJAVU_DBPASS</td>
+          <td class="code"><pre>u&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#39;logging.config.dictConfig&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_LOADERS</td>
+          <td class="code"><pre>(&#39;django.template.loaders.filesystem.Loader&#39;,
+ &#39;django.template.loaders.app_directories.Loader&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#39;sample.wsgi.application&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_DEBUG</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#39;SAMEORIGIN&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#39;csrftoken&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#39;django.core.signing.TimestampSigner&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_CHARSET</td>
+          <td class="code"><pre>&#39;utf-8&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FILE_STORAGE</td>
+          <td class="code"><pre>&#39;django.core.files.storage.FileSystemStorage&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>(&#39;django.contrib.admin&#39;,
+ &#39;django.contrib.auth&#39;,
+ &#39;django.contrib.contenttypes&#39;,
+ &#39;django.contrib.sessions&#39;,
+ &#39;django.contrib.messages&#39;,
+ &#39;django.contrib.staticfiles&#39;,
+ &#39;rest_framework&#39;,
+ &#39;rest_framework.authtoken&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>((&#39;af&#39;, &#39;Afrikaans&#39;),
+ (&#39;ar&#39;, &#39;Arabic&#39;),
+ (&#39;ast&#39;, &#39;Asturian&#39;),
+ (&#39;az&#39;, &#39;Azerbaijani&#39;),
+ (&#39;bg&#39;, &#39;Bulgarian&#39;),
+ (&#39;be&#39;, &#39;Belarusian&#39;),
+ (&#39;bn&#39;, &#39;Bengali&#39;),
+ (&#39;br&#39;, &#39;Breton&#39;),
+ (&#39;bs&#39;, &#39;Bosnian&#39;),
+ (&#39;ca&#39;, &#39;Catalan&#39;),
+ (&#39;cs&#39;, &#39;Czech&#39;),
+ (&#39;cy&#39;, &#39;Welsh&#39;),
+ (&#39;da&#39;, &#39;Danish&#39;),
+ (&#39;de&#39;, &#39;German&#39;),
+ (&#39;el&#39;, &#39;Greek&#39;),
+ (&#39;en&#39;, &#39;English&#39;),
+ (&#39;en-au&#39;, &#39;Australian English&#39;),
+ (&#39;en-gb&#39;, &#39;British English&#39;),
+ (&#39;eo&#39;, &#39;Esperanto&#39;),
+ (&#39;es&#39;, &#39;Spanish&#39;),
+ (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;),
+ (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;),
+ (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;),
+ (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;),
+ (&#39;et&#39;, &#39;Estonian&#39;),
+ (&#39;eu&#39;, &#39;Basque&#39;),
+ (&#39;fa&#39;, &#39;Persian&#39;),
+ (&#39;fi&#39;, &#39;Finnish&#39;),
+ (&#39;fr&#39;, &#39;French&#39;),
+ (&#39;fy&#39;, &#39;Frisian&#39;),
+ (&#39;ga&#39;, &#39;Irish&#39;),
+ (&#39;gl&#39;, &#39;Galician&#39;),
+ (&#39;he&#39;, &#39;Hebrew&#39;),
+ (&#39;hi&#39;, &#39;Hindi&#39;),
+ (&#39;hr&#39;, &#39;Croatian&#39;),
+ (&#39;hu&#39;, &#39;Hungarian&#39;),
+ (&#39;ia&#39;, &#39;Interlingua&#39;),
+ (&#39;id&#39;, &#39;Indonesian&#39;),
+ (&#39;io&#39;, &#39;Ido&#39;),
+ (&#39;is&#39;, &#39;Icelandic&#39;),
+ (&#39;it&#39;, &#39;Italian&#39;),
+ (&#39;ja&#39;, &#39;Japanese&#39;),
+ (&#39;ka&#39;, &#39;Georgian&#39;),
+ (&#39;kk&#39;, &#39;Kazakh&#39;),
+ (&#39;km&#39;, &#39;Khmer&#39;),
+ (&#39;kn&#39;, &#39;Kannada&#39;),
+ (&#39;ko&#39;, &#39;Korean&#39;),
+ (&#39;lb&#39;, &#39;Luxembourgish&#39;),
+ (&#39;lt&#39;, &#39;Lithuanian&#39;),
+ (&#39;lv&#39;, &#39;Latvian&#39;),
+ (&#39;mk&#39;, &#39;Macedonian&#39;),
+ (&#39;ml&#39;, &#39;Malayalam&#39;),
+ (&#39;mn&#39;, &#39;Mongolian&#39;),
+ (&#39;mr&#39;, &#39;Marathi&#39;),
+ (&#39;my&#39;, &#39;Burmese&#39;),
+ (&#39;nb&#39;, &#39;Norwegian Bokmal&#39;),
+ (&#39;ne&#39;, &#39;Nepali&#39;),
+ (&#39;nl&#39;, &#39;Dutch&#39;),
+ (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;),
+ (&#39;os&#39;, &#39;Ossetic&#39;),
+ (&#39;pa&#39;, &#39;Punjabi&#39;),
+ (&#39;pl&#39;, &#39;Polish&#39;),
+ (&#39;pt&#39;, &#39;Portuguese&#39;),
+ (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;),
+ (&#39;ro&#39;, &#39;Romanian&#39;),
+ (&#39;ru&#39;, &#39;Russian&#39;),
+ (&#39;sk&#39;, &#39;Slovak&#39;),
+ (&#39;sl&#39;, &#39;Slovenian&#39;),
+ (&#39;sq&#39;, &#39;Albanian&#39;),
+ (&#39;sr&#39;, &#39;Serbian&#39;),
+ (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;),
+ (&#39;sv&#39;, &#39;Swedish&#39;),
+ (&#39;sw&#39;, &#39;Swahili&#39;),
+ (&#39;ta&#39;, &#39;Tamil&#39;),
+ (&#39;te&#39;, &#39;Telugu&#39;),
+ (&#39;th&#39;, &#39;Thai&#39;),
+ (&#39;tr&#39;, &#39;Turkish&#39;),
+ (&#39;tt&#39;, &#39;Tatar&#39;),
+ (&#39;udm&#39;, &#39;Udmurt&#39;),
+ (&#39;uk&#39;, &#39;Ukrainian&#39;),
+ (&#39;ur&#39;, &#39;Urdu&#39;),
+ (&#39;vi&#39;, &#39;Vietnamese&#39;),
+ (&#39;zh-cn&#39;, &#39;Simplified Chinese&#39;),
+ (&#39;zh-hans&#39;, &#39;Simplified Chinese&#39;),
+ (&#39;zh-hant&#39;, &#39;Traditional Chinese&#39;),
+ (&#39;zh-tw&#39;, &#39;Traditional Chinese&#39;))</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_L10N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#39;F j&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&#39;/accounts/login/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEJAVU_UPLOADED_FILES_TEMP</td>
+          <td class="code"><pre>&#39;/home/murthyraju/Documents/fl/dejavu/code/samples/short/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#39;P&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#39;auth.User&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>(&#39;%Y-%m-%d&#39;,
+ &#39;%m/%d/%Y&#39;,
+ &#39;%m/%d/%y&#39;,
+ &#39;%b %d %Y&#39;,
+ &#39;%b %d, %Y&#39;,
+ &#39;%d %b %Y&#39;,
+ &#39;%d %b, %Y&#39;,
+ &#39;%B %d %Y&#39;,
+ &#39;%B %d, %Y&#39;,
+ &#39;%d %B %Y&#39;,
+ &#39;%d %B, %Y&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>(&#39;django.contrib.auth.backends.ModelBackend&#39;,)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>u&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT_DAYS</td>
+          <td class="code"><pre>u&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#39;default&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#39;django.contrib.sessions.backends.db&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#39;django.views.csrf.csrf_failure&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#39;/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&#39;/accounts/profile/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#39;.&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_STRING_IF_INVALID</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEJAVU_DBUSER</td>
+          <td class="code"><pre>&#39;dejavu&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_URL</td>
+          <td class="code"><pre>&#39;/accounts/logout/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#39;localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#39;N j, Y&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#39;django.views.debug.SafeExceptionReporterFilter&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#39;webmaster@localhost&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#39;N j, Y, P&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_DIRS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_INCLUDE_ROOTS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#39;m/d/Y&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[{&#39;APP_DIRS&#39;: True,
+  &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
+  &#39;DIRS&#39;: [],
+  &#39;OPTIONS&#39;: {&#39;context_processors&#39;: [&#39;django.template.context_processors.debug&#39;,
+                                     &#39;django.template.context_processors.request&#39;,
+                                     &#39;django.contrib.auth.context_processors.auth&#39;,
+                                     &#39;django.contrib.messages.context_processors.messages&#39;]}}]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#39;django.test.runner.DiscoverRunner&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>u&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#39;UTC&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#39;django.core.mail.backends.smtp.EmailBackend&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATE_CONTEXT_PROCESSORS</td>
+          <td class="code"><pre>(&#39;django.contrib.auth.context_processors.auth&#39;,
+ &#39;django.template.context_processors.debug&#39;,
+ &#39;django.template.context_processors.i18n&#39;,
+ &#39;django.template.context_processors.media&#39;,
+ &#39;django.template.context_processors.static&#39;,
+ &#39;django.template.context_processors.tz&#39;,
+ &#39;django.contrib.messages.context_processors.messages&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#39;sample.settings&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_ETAGS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>(&#39;he&#39;, &#39;ar&#39;, &#39;fa&#39;, &#39;ur&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>()</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>&#39;/static/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#39;m/d/Y P&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>u&#39;********************&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#39;/&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>(&#39;%Y-%m-%d %H:%M:%S&#39;,
+ &#39;%Y-%m-%d %H:%M:%S.%f&#39;,
+ &#39;%Y-%m-%d %H:%M&#39;,
+ &#39;%Y-%m-%d&#39;,
+ &#39;%m/%d/%Y %H:%M:%S&#39;,
+ &#39;%m/%d/%Y %H:%M:%S.%f&#39;,
+ &#39;%m/%d/%Y %H:%M&#39;,
+ &#39;%m/%d/%Y&#39;,
+ &#39;%m/%d/%y %H:%M:%S&#39;,
+ &#39;%m/%d/%y %H:%M:%S.%f&#39;,
+ &#39;%m/%d/%y %H:%M&#39;,
+ &#39;%m/%d/%y&#39;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+  <div id="explanation">
+    <p>
+      You're seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </div>
+
+</body>
+</html>
